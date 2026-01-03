@@ -1,0 +1,128 @@
+{
+  "month": "2025-12",
+  "month_name": "December 2025",
+  "year": 2025,
+  "products": {
+    "1": {
+      "barcode": "05099151006615",
+      "total_dispensed_in_month": 2,
+      "daily_dispenses": {
+        "2025-12-01": 1,
+        "2025-12-02": 1
+      }
+    },
+    "2": {
+      "barcode": "08588007409306",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "3": {
+      "barcode": "03838989638689",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "9": {
+      "barcode": "5997321782447",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-02": 1
+      }
+    },
+    "20": {
+      "barcode": "5060163211021",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-02": 1
+      }
+    },
+    "8": {
+      "barcode": "05900411004909",
+      "total_dispensed_in_month": 3,
+      "daily_dispenses": {
+        "2025-12-01": 3
+      }
+    },
+    "7": {
+      "barcode": "4026466056951",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "5": {
+      "barcode": "4030031894336",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "11": {
+      "barcode": "08592387001470",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "12": {
+      "barcode": "8437004649355",
+      "total_dispensed_in_month": 2,
+      "daily_dispenses": {
+        "2025-12-01": 2
+      }
+    },
+    "16": {
+      "barcode": "08594739268395",
+      "total_dispensed_in_month": 3,
+      "daily_dispenses": {
+        "2025-12-01": 2,
+        "2025-12-02": 1
+      }
+    },
+    "14": {
+      "barcode": "08594059861672",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "15": {
+      "barcode": "4029799128746",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "17": {
+      "barcode": "3574661403977",
+      "total_dispensed_in_month": 3,
+      "daily_dispenses": {
+        "2025-12-01": 2,
+        "2025-12-02": 1
+      }
+    },
+    "18": {
+      "barcode": "08590335507470",
+      "total_dispensed_in_month": 1,
+      "daily_dispenses": {
+        "2025-12-01": 1
+      }
+    },
+    "13": {
+      "barcode": "08592387019246",
+      "total_dispensed_in_month": 2,
+      "daily_dispenses": {
+        "2025-12-01": 2
+      }
+    }
+  },
+  "summary": {
+    "total_dispenses": 25,
+    "first_dispense": "2025-12-01",
+    "last_dispense": "2025-12-02",
+    "total_products": 16
+  }
+}

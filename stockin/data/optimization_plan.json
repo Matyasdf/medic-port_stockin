@@ -1,0 +1,229 @@
+{
+  "generated_at": "2025-12-13T14:24:43.012882",
+  "moves": [
+    {
+      "id": 1,
+      "phase": "HEIGHT_FIX",
+      "priority": "CRITICAL",
+      "item_id": 4,
+      "product": "P002",
+      "from_shelf": "rack1_1",
+      "to_shelf": "rack1_2",
+      "reason": "Box 55mm cannot fit on 40mm shelf"
+    },
+    {
+      "id": 2,
+      "phase": "HEIGHT_FIX",
+      "priority": "CRITICAL",
+      "item_id": 9,
+      "product": "P004",
+      "from_shelf": "rack1_1",
+      "to_shelf": "rack2_3",
+      "reason": "Box 75mm cannot fit on 40mm shelf"
+    },
+    {
+      "id": 3,
+      "phase": "HEIGHT_FIX",
+      "priority": "CRITICAL",
+      "item_id": 10,
+      "product": "P004",
+      "from_shelf": "rack2_1",
+      "to_shelf": "rack2_3",
+      "reason": "Box 75mm cannot fit on 40mm shelf"
+    },
+    {
+      "id": 4,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 1,
+      "product": "P001",
+      "from_rack": 3,
+      "to_rack": 1,
+      "to_shelf": "rack1_1",
+      "reason": "Consolidate P001 to rack1 (weight=0.9)"
+    },
+    {
+      "id": 5,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 2,
+      "product": "P001",
+      "from_rack": 4,
+      "to_rack": 1,
+      "to_shelf": "rack1_1",
+      "reason": "Consolidate P001 to rack1 (weight=0.9)"
+    },
+    {
+      "id": 6,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 5,
+      "product": "P002",
+      "from_rack": 2,
+      "to_rack": 1,
+      "to_shelf": "rack1_2",
+      "reason": "Consolidate P002 to rack1 (weight=0.7)"
+    },
+    {
+      "id": 7,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 6,
+      "product": "P002",
+      "from_rack": 3,
+      "to_rack": 1,
+      "to_shelf": "rack1_2",
+      "reason": "Consolidate P002 to rack1 (weight=0.7)"
+    },
+    {
+      "id": 8,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 8,
+      "product": "P003",
+      "from_rack": 4,
+      "to_rack": 2,
+      "to_shelf": "rack2_1",
+      "reason": "Consolidate P003 to rack2 (weight=0.5)"
+    },
+    {
+      "id": 9,
+      "phase": "CONSOLIDATE",
+      "priority": "HIGH",
+      "item_id": 9,
+      "product": "P004",
+      "from_rack": 1,
+      "to_rack": 2,
+      "to_shelf": "rack2_3",
+      "reason": "Consolidate P004 to rack2 (weight=0.3)"
+    },
+    {
+      "id": 11,
+      "phase": "DEMAND_OPTIMIZE",
+      "priority": "MEDIUM",
+      "item_id": 1,
+      "product": "P001",
+      "current_distance": 400,
+      "to_shelf": "rack1_1",
+      "reason": "High demand product (weight=0.9) too far from output (400mm)"
+    },
+    {
+      "id": 12,
+      "phase": "DEMAND_OPTIMIZE",
+      "priority": "MEDIUM",
+      "item_id": 2,
+      "product": "P001",
+      "current_distance": 550,
+      "to_shelf": "rack1_1",
+      "reason": "High demand product (weight=0.9) too far from output (550mm)"
+    },
+    {
+      "id": 13,
+      "phase": "DEMAND_OPTIMIZE",
+      "priority": "MEDIUM",
+      "item_id": 6,
+      "product": "P002",
+      "current_distance": 400,
+      "to_shelf": "rack1_2",
+      "reason": "High demand product (weight=0.7) too far from output (400mm)"
+    },
+    {
+      "id": 10,
+      "phase": "HEIGHT_OPTIMIZE",
+      "priority": "MEDIUM",
+      "item_id": 3,
+      "product": "P001",
+      "from_shelf": "rack1_3",
+      "to_shelf": "rack1_1",
+      "reason": "Reduce height waste: 35mm box on 80mm shelf (wasting 45mm)"
+    },
+    {
+      "id": 14,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 1,
+      "product": "P001",
+      "expiry": "2025-02-15",
+      "current_index": 0,
+      "target_index": 1,
+      "reason": "FEFO: Move to index 1 (expiry 2025-02-15)"
+    },
+    {
+      "id": 15,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 3,
+      "product": "P001",
+      "expiry": "2025-03-20",
+      "current_index": 0,
+      "target_index": 2,
+      "reason": "FEFO: Move to index 2 (expiry 2025-03-20)"
+    },
+    {
+      "id": 16,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 5,
+      "product": "P002",
+      "expiry": "2025-02-28",
+      "current_index": 0,
+      "target_index": 1,
+      "reason": "FEFO: Move to index 1 (expiry 2025-02-28)"
+    },
+    {
+      "id": 17,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 4,
+      "product": "P002",
+      "expiry": "2025-04-01",
+      "current_index": 0,
+      "target_index": 2,
+      "reason": "FEFO: Move to index 2 (expiry 2025-04-01)"
+    },
+    {
+      "id": 18,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 7,
+      "product": "P003",
+      "expiry": "2025-06-15",
+      "current_index": 0,
+      "target_index": 1,
+      "reason": "FEFO: Move to index 1 (expiry 2025-06-15)"
+    },
+    {
+      "id": 19,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 9,
+      "product": "P004",
+      "expiry": "2025-08-01",
+      "current_index": 0,
+      "target_index": 1,
+      "reason": "FEFO: Move to index 1 (expiry 2025-08-01)"
+    },
+    {
+      "id": 20,
+      "phase": "FEFO_REORDER",
+      "priority": "LOW",
+      "item_id": 11,
+      "product": "P005",
+      "expiry": "2026-01-01",
+      "current_index": 0,
+      "target_index": 1,
+      "reason": "FEFO: Move to index 1 (expiry 2026-01-01)"
+    }
+  ],
+  "stats": {
+    "total_moves": 20,
+    "by_phase": {
+      "HEIGHT_FIX": 3,
+      "CONSOLIDATE": 6,
+      "DEMAND_OPTIMIZE": 3,
+      "HEIGHT_OPTIMIZE": 1,
+      "FEFO_REORDER": 7
+    },
+    "estimated_seconds": 300
+  }
+}

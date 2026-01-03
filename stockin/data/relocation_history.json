@@ -1,0 +1,282 @@
+{
+  "relocations": {
+    "1": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 15:35:02.957814",
+      "reason": "obstruction_removal"
+    },
+    "2": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 16:04:16.416928",
+      "reason": "obstruction_removal"
+    },
+    "3": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 16:21:53.079424",
+      "reason": "obstruction_removal"
+    },
+    "4": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 16:53:46.622872",
+      "reason": "obstruction_removal"
+    },
+    "5": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 17:03:31.107153",
+      "reason": "obstruction_removal"
+    },
+    "6": {
+      "item_id": 7,
+      "product_id": 400,
+      "barcode": "050991510066151",
+      "original_vsu_id": 5,
+      "original_vsu_code": "vu5",
+      "new_vsu_id": 31,
+      "new_vsu_code": "vu31",
+      "original_coordinates": {
+        "x": 1177.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 1733.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 17:18:11.325394",
+      "reason": "obstruction_removal"
+    },
+    "7": {
+      "item_id": 9,
+      "product_id": 811,
+      "barcode": "0590041100490911",
+      "original_vsu_id": 10,
+      "original_vsu_code": "vu10",
+      "new_vsu_id": 1,
+      "new_vsu_code": "vu1",
+      "original_coordinates": {
+        "x": 820.0,
+        "y": 601.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 17:26:32.368471",
+      "reason": "obstruction_removal"
+    },
+    "8": {
+      "item_id": 39,
+      "product_id": 1900,
+      "barcode": "0859400295033011",
+      "original_vsu_id": 25,
+      "original_vsu_code": "vu25",
+      "new_vsu_id": 10,
+      "new_vsu_code": "vu10",
+      "original_coordinates": {
+        "x": 1236.0,
+        "y": 100.0,
+        "z": 40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 601.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 17:45:27.706528",
+      "reason": "obstruction_removal"
+    },
+    "9": {
+      "item_id": 28,
+      "product_id": 1500,
+      "barcode": "40297991287461",
+      "original_vsu_id": 21,
+      "original_vsu_code": "vu21",
+      "new_vsu_id": 25,
+      "new_vsu_code": "vu25",
+      "original_coordinates": {
+        "x": 1122.0,
+        "y": 740.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 1236.0,
+        "y": 100.0,
+        "z": 40.0
+      },
+      "relocated_at": "2025-12-06 18:05:24.418044",
+      "reason": "obstruction_removal"
+    },
+    "10": {
+      "item_id": 22,
+      "product_id": 1200,
+      "barcode": "843700464935511",
+      "original_vsu_id": 17,
+      "original_vsu_code": "vu17",
+      "new_vsu_id": 21,
+      "new_vsu_code": "vu21",
+      "original_coordinates": {
+        "x": 318.0,
+        "y": 825.0,
+        "z": 40.0
+      },
+      "new_coordinates": {
+        "x": 1122.0,
+        "y": 740.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-06 18:54:01.560607",
+      "reason": "obstruction_removal"
+    },
+    "11": {
+      "item_id": 1,
+      "product_id": 1111,
+      "barcode": "505456306070911",
+      "original_vsu_id": 1,
+      "original_vsu_code": "vu1",
+      "new_vsu_id": 17,
+      "new_vsu_code": "vu17",
+      "original_coordinates": {
+        "x": 820.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 318.0,
+        "y": 825.0,
+        "z": 40.0
+      },
+      "relocated_at": "2025-12-06 21:24:37.025435",
+      "reason": "obstruction_removal"
+    },
+    "12": {
+      "item_id": 32,
+      "product_id": 160,
+      "barcode": "085947392683950",
+      "original_vsu_id": 22,
+      "original_vsu_code": "vu22",
+      "new_vsu_id": 1,
+      "new_vsu_code": "vu1",
+      "original_coordinates": {
+        "x": 129.0,
+        "y": 780.0,
+        "z": 40.0
+      },
+      "new_coordinates": {
+        "x": 820.0,
+        "y": 784.0,
+        "z": -40.0
+      },
+      "relocated_at": "2025-12-21 23:12:40.044798",
+      "reason": "obstruction_removal"
+    },
+    "13": {
+      "item_id": 2433,
+      "product_id": 31,
+      "barcode": "08001841553351",
+      "original_vsu_id": 801,
+      "original_vsu_code": "vu801",
+      "new_vsu_id": 743,
+      "new_vsu_code": "vu743",
+      "original_coordinates": {
+        "x": 1911.0,
+        "y": 690.0,
+        "z": -40.0
+      },
+      "new_coordinates": {
+        "x": 1679.0,
+        "y": 690.0,
+        "z": -40.0
+      },
+      "relocated_at": "2026-01-03 08:00:28.932734",
+      "reason": "obstruction_removal"
+    }
+  },
+  "metadata": {
+    "total_relocations": 13,
+    "last_updated": "2026-01-03T08:00:28.932743",
+    "version": "1.0"
+  }
+}

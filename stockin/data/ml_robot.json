@@ -1,0 +1,4885 @@
+{
+  "Warehouses": [
+    {
+      "Id": 1,
+      "Name": "Virtual MedicPort Storage",
+      "Note": "Storage PoC ML",
+      "Type": "MedicPort Robot V1",
+      "StorageUnits": [
+        {
+          "Id": 100,
+          "ChildUnitsType": [
+            {
+              "Id": 101,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_1",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 6,
+                  "Width": 74.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu6",
+                  "CoordinateX": 1.0,
+                  "CoordinateY": 825.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 947200.0
+                },
+                {
+                  "Id": 9,
+                  "Width": 182.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu9",
+                  "CoordinateX": 129.0,
+                  "CoordinateY": 825.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2329600.0
+                },
+                {
+                  "Id": 15,
+                  "Width": 63.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu15",
+                  "CoordinateX": 251.0,
+                  "CoordinateY": 825.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 806400.0
+                },
+                {
+                  "Id": 17,
+                  "Width": 72.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu17",
+                  "CoordinateX": 318.0,
+                  "CoordinateY": 825.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 921600.0
+                },
+                {
+                  "Id": 18,
+                  "Width": 72.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu18",
+                  "CoordinateX": 390.0,
+                  "CoordinateY": 825.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 921600.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 40,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 825,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 102,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_2",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 1550,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 103,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_3",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 131,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 1459,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 104,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_4",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 1323,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 105,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_5",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 176,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 1233,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 106,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_6",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 16,
+                  "Width": 80.0,
+                  "Height": 130.0,
+                  "Depth": 320.0,
+                  "Code": "vu16",
+                  "CoordinateX": 1.0,
+                  "CoordinateY": 1052.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 3328000.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 130,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 1052,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 107,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_7",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 917,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 108,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_8",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 20,
+                  "Width": 125.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu20",
+                  "CoordinateX": 1.0,
+                  "CoordinateY": 780.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1600000.0
+                },
+                {
+                  "Id": 22,
+                  "Width": 133.0,
+                  "Height": 40.0,
+                  "Depth": 320.0,
+                  "Code": "vu22",
+                  "CoordinateX": 129.0,
+                  "CoordinateY": 780.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1702400.0
+                },
+                {
+                  "Id": 59,
+                  "Width": 68.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu59",
+                  "CoordinateX": 272.0,
+                  "CoordinateY": 780.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 863872.0000000001
+                },
+                {
+                  "Id": 66,
+                  "Width": 107.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu66",
+                  "CoordinateX": 350.0,
+                  "CoordinateY": 780.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1359328.0000000002
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 40,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 780,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 109,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_9",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 51,
+                  "Width": 61.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu51",
+                  "CoordinateX": 1.0,
+                  "CoordinateY": 735.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 774944.0000000001
+                },
+                {
+                  "Id": 53,
+                  "Width": 94.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu53",
+                  "CoordinateX": 72.0,
+                  "CoordinateY": 735.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1194176.0
+                },
+                {
+                  "Id": 56,
+                  "Width": 68.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu56",
+                  "CoordinateX": 176.0,
+                  "CoordinateY": 735.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 863872.0000000001
+                },
+                {
+                  "Id": 57,
+                  "Width": 104.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu57",
+                  "CoordinateX": 254.0,
+                  "CoordinateY": 735.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1321216.0
+                },
+                {
+                  "Id": 58,
+                  "Width": 113.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu58",
+                  "CoordinateX": 368.0,
+                  "CoordinateY": 735.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1435552.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 40,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 735,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 110,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_10",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 41,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 690,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 111,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_11",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 41,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 644,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 112,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_12",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 598,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 113,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_13",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 508,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 114,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_14",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 417,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 115,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_15",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 326,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 116,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_16",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 235,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 117,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_17",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 145,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 118,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack1_18",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 240,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 1,
+                "CoordinateY": 54,
+                "CoordinateZ": 40
+              }
+            }
+          ],
+          "UnitType": "Rack",
+          "Text": "Rack 1 - nasypka",
+          "VirtualSuDimensions": null,
+          "SuDimensions": null
+        },
+        {
+          "Id": 200,
+          "ChildUnitsType": [
+            {
+              "Id": 201,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_1",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 131,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 1733,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 206,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_6",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 1146,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 207,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_7",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 41,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 1056,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 209,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_9",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 41,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 965,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 211,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_11",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 38,
+                  "Width": 44.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu38",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 558976.0
+                },
+                {
+                  "Id": 39,
+                  "Width": 61.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu39",
+                  "CoordinateX": 874.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 774944.0000000001
+                },
+                {
+                  "Id": 42,
+                  "Width": 66.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu42",
+                  "CoordinateX": 945.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 838464.0000000001
+                },
+                {
+                  "Id": 43,
+                  "Width": 45.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu43",
+                  "CoordinateX": 1021.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 571680.0000000001
+                },
+                {
+                  "Id": 47,
+                  "Width": 67.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu47",
+                  "CoordinateX": 1076.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 851168.0
+                },
+                {
+                  "Id": 48,
+                  "Width": 34.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu48",
+                  "CoordinateX": 1153.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 431936.00000000006
+                },
+                {
+                  "Id": 50,
+                  "Width": 71.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu50",
+                  "CoordinateX": 1197.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 901984.0000000001
+                },
+                {
+                  "Id": 55,
+                  "Width": 55.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu55",
+                  "CoordinateX": 1278.0,
+                  "CoordinateY": 875.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 698720.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 40,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 875,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 213,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_13",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 1,
+                  "Width": 141.0,
+                  "Height": 39.0,
+                  "Depth": 320.0,
+                  "Code": "vu1",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 784.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1759680.0
+                },
+                {
+                  "Id": 2,
+                  "Width": 141.0,
+                  "Height": 39.0,
+                  "Depth": 320.0,
+                  "Code": "vu2",
+                  "CoordinateX": 960.0,
+                  "CoordinateY": 784.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1759680.0
+                },
+                {
+                  "Id": 4,
+                  "Width": 111.0,
+                  "Height": 39.0,
+                  "Depth": 320.0,
+                  "Code": "vu4",
+                  "CoordinateX": 1085.0,
+                  "CoordinateY": 784.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1385280.0
+                },
+                {
+                  "Id": 5,
+                  "Width": 74.0,
+                  "Height": 39.0,
+                  "Depth": 320.0,
+                  "Code": "vu5",
+                  "CoordinateX": 1177.0,
+                  "CoordinateY": 784.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 923520.0
+                },
+                {
+                  "Id": 29,
+                  "Width": 68.0,
+                  "Height": 38.7,
+                  "Depth": 320.0,
+                  "Code": "vu29",
+                  "CoordinateX": 1261.0,
+                  "CoordinateY": 784.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 842112.0000000001
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 39,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 784,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 214,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_14",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 12,
+                  "Width": 93.0,
+                  "Height": 42.0,
+                  "Depth": 320.0,
+                  "Code": "vu12",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 740.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1249920.0
+                },
+                {
+                  "Id": 13,
+                  "Width": 93.0,
+                  "Height": 42.0,
+                  "Depth": 320.0,
+                  "Code": "vu13",
+                  "CoordinateX": 912.0,
+                  "CoordinateY": 740.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1249920.0
+                },
+                {
+                  "Id": 14,
+                  "Width": 93.0,
+                  "Height": 42.0,
+                  "Depth": 320.0,
+                  "Code": "vu14",
+                  "CoordinateX": 1004.0,
+                  "CoordinateY": 740.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1249920.0
+                },
+                {
+                  "Id": 21,
+                  "Width": 144.0,
+                  "Height": 42.0,
+                  "Depth": 320.0,
+                  "Code": "vu21",
+                  "CoordinateX": 1122.0,
+                  "CoordinateY": 740.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1935360.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 42,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 740,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 215,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_15",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 30,
+                  "Width": 107.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu30",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1359328.0000000002
+                },
+                {
+                  "Id": 32,
+                  "Width": 52.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu32",
+                  "CoordinateX": 937.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 660608.0
+                },
+                {
+                  "Id": 33,
+                  "Width": 59.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu33",
+                  "CoordinateX": 999.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 749536.0
+                },
+                {
+                  "Id": 35,
+                  "Width": 57.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu35",
+                  "CoordinateX": 1068.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 724128.0
+                },
+                {
+                  "Id": 36,
+                  "Width": 71.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu36",
+                  "CoordinateX": 1135.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 901984.0000000001
+                },
+                {
+                  "Id": 37,
+                  "Width": 82.0,
+                  "Height": 39.7,
+                  "Depth": 320.0,
+                  "Code": "vu37",
+                  "CoordinateX": 1216.0,
+                  "CoordinateY": 693.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1041728.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 40,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 693,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 216,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_16",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 23,
+                  "Width": 141.0,
+                  "Height": 42.0,
+                  "Depth": 320.0,
+                  "Code": "vu23",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 648.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1895040.0
+                },
+                {
+                  "Id": 54,
+                  "Width": 64.0,
+                  "Height": 41.7,
+                  "Depth": 320.0,
+                  "Code": "vu54",
+                  "CoordinateX": 971.0,
+                  "CoordinateY": 648.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 854016.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 42,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 648,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 217,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_17",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 10,
+                  "Width": 108.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu10",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 601.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2903040.0
+                },
+                {
+                  "Id": 11,
+                  "Width": 108.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu11",
+                  "CoordinateX": 928.0,
+                  "CoordinateY": 601.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2903040.0
+                },
+                {
+                  "Id": 24,
+                  "Width": 147.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu24",
+                  "CoordinateX": 1055.0,
+                  "CoordinateY": 601.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 3951360.0
+                },
+                {
+                  "Id": 26,
+                  "Width": 80.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu26",
+                  "CoordinateX": 1168.0,
+                  "CoordinateY": 601.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2150400.0
+                },
+                {
+                  "Id": 65,
+                  "Width": 53.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu65",
+                  "CoordinateX": 1258.0,
+                  "CoordinateY": 601.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1419552.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 84,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 601,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 218,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_18",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 63,
+                  "Width": 124.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu63",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 512.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 3360896.0000000005
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 512,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 219,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_19",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 422,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 220,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_20",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 331,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 221,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_21",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 27,
+                  "Width": 80.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu27",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 240.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2150400.0
+                },
+                {
+                  "Id": 28,
+                  "Width": 80.0,
+                  "Height": 84.0,
+                  "Depth": 320.0,
+                  "Code": "vu28",
+                  "CoordinateX": 900.0,
+                  "CoordinateY": 240.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2150400.0
+                },
+                {
+                  "Id": 31,
+                  "Width": 106.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu31",
+                  "CoordinateX": 990.0,
+                  "CoordinateY": 240.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 2839104.0
+                },
+                {
+                  "Id": 34,
+                  "Width": 117.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu34",
+                  "CoordinateX": 1106.0,
+                  "CoordinateY": 240.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 3133728.0
+                },
+                {
+                  "Id": 44,
+                  "Width": 59.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu44",
+                  "CoordinateX": 1233.0,
+                  "CoordinateY": 240.0,
+                  "CoordinateZ": -40.0,
+                  "Volume": 1580256.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 84,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 240,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 222,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_22",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 151,
+                "CoordinateZ": -40
+              }
+            },
+            {
+              "Id": 223,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack2_23",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 200,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 60,
+                "CoordinateZ": -40
+              }
+            }
+          ],
+          "UnitType": "Rack",
+          "Text": "Rack 2 - hrablo",
+          "VirtualSuDimensions": null,
+          "SuDimensions": null
+        },
+        {
+          "Id": 300,
+          "ChildUnitsType": [
+            {
+              "Id": 301,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_1",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 175,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 1232,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 302,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_2",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 46,
+                  "Width": 44.0,
+                  "Height": 129.7,
+                  "Depth": 320.0,
+                  "Code": "vu46",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 1052.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1826175.9999999998
+                },
+                {
+                  "Id": 69,
+                  "Width": 43.0,
+                  "Height": 129.7,
+                  "Depth": 320.0,
+                  "Code": "vu69",
+                  "CoordinateX": 874.0,
+                  "CoordinateY": 1052.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1784671.9999999998
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 130,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 1052,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 303,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_3",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 132,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 917,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 304,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_4",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 87,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 780,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 305,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_5",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 40,
+                  "Width": 107.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu40",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 688.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2865888.0
+                },
+                {
+                  "Id": 41,
+                  "Width": 132.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu41",
+                  "CoordinateX": 937.0,
+                  "CoordinateY": 688.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 3535488.0
+                },
+                {
+                  "Id": 45,
+                  "Width": 125.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu45",
+                  "CoordinateX": 1079.0,
+                  "CoordinateY": 688.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 3348000.0
+                },
+                {
+                  "Id": 49,
+                  "Width": 92.0,
+                  "Height": 83.7,
+                  "Depth": 320.0,
+                  "Code": "vu49",
+                  "CoordinateX": 1214.0,
+                  "CoordinateY": 688.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2464128.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 84,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 688,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 306,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_6",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 599,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 307,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_7",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 509,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 308,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_8",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 418,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 309,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_9",
+              "VirtualSuDimensions": [],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 86,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 327,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 310,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_10",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 52,
+                  "Width": 102.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu52",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 236.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2764608.0
+                },
+                {
+                  "Id": 60,
+                  "Width": 96.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu60",
+                  "CoordinateX": 932.0,
+                  "CoordinateY": 236.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2601984.0
+                },
+                {
+                  "Id": 61,
+                  "Width": 103.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu61",
+                  "CoordinateX": 1038.0,
+                  "CoordinateY": 236.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2791712.0
+                },
+                {
+                  "Id": 62,
+                  "Width": 105.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu62",
+                  "CoordinateX": 1151.0,
+                  "CoordinateY": 236.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2845920.0
+                },
+                {
+                  "Id": 70,
+                  "Width": 50.0,
+                  "Height": 84.7,
+                  "Depth": 320.0,
+                  "Code": "vu70",
+                  "CoordinateX": 1266.0,
+                  "CoordinateY": 236.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1355200.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 85,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 236,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 311,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_11",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 64,
+                  "Width": 64.0,
+                  "Height": 40.7,
+                  "Depth": 320.0,
+                  "Code": "vu64",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 146.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 833536.0
+                },
+                {
+                  "Id": 67,
+                  "Width": 62.0,
+                  "Height": 40.7,
+                  "Depth": 320.0,
+                  "Code": "vu67",
+                  "CoordinateX": 894.0,
+                  "CoordinateY": 146.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 807488.0
+                },
+                {
+                  "Id": 68,
+                  "Width": 67.0,
+                  "Height": 40.7,
+                  "Depth": 320.0,
+                  "Code": "vu68",
+                  "CoordinateX": 966.0,
+                  "CoordinateY": 146.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 872608.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 41,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 146,
+                "CoordinateZ": 40
+              }
+            },
+            {
+              "Id": 312,
+              "ChildUnitsType": null,
+              "UnitType": "Shelf",
+              "Text": "rack3_23",
+              "VirtualSuDimensions": [
+                {
+                  "Id": 3,
+                  "Width": 89.0,
+                  "Height": 75.0,
+                  "Depth": 320.0,
+                  "Code": "vu3",
+                  "CoordinateX": 820.0,
+                  "CoordinateY": 100.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2136000.0
+                },
+                {
+                  "Id": 7,
+                  "Width": 92.0,
+                  "Height": 75.0,
+                  "Depth": 320.0,
+                  "Code": "vu7",
+                  "CoordinateX": 910.0,
+                  "CoordinateY": 100.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2208000.0
+                },
+                {
+                  "Id": 8,
+                  "Width": 91.0,
+                  "Height": 75.0,
+                  "Depth": 320.0,
+                  "Code": "vu8",
+                  "CoordinateX": 1001.0,
+                  "CoordinateY": 100.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 2184000.0
+                },
+                {
+                  "Id": 19,
+                  "Width": 153.0,
+                  "Height": 75.0,
+                  "Depth": 320.0,
+                  "Code": "vu19",
+                  "CoordinateX": 1122.0,
+                  "CoordinateY": 100.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 3672000.0
+                },
+                {
+                  "Id": 25,
+                  "Width": 76.0,
+                  "Height": 75.0,
+                  "Depth": 320.0,
+                  "Code": "vu25",
+                  "CoordinateX": 1236.0,
+                  "CoordinateY": 100.0,
+                  "CoordinateZ": 40.0,
+                  "Volume": 1824000.0
+                }
+              ],
+              "SuDimensions": {
+                "Id": 0,
+                "Width": 515,
+                "Height": 75,
+                "Depth": 320,
+                "Weight": 40000,
+                "CoordinateX": 820,
+                "CoordinateY": 100,
+                "CoordinateZ": 40
+              }
+            }
+          ],
+          "UnitType": "Rack",
+          "Text": "Rack 3 - naspyka naproti",
+          "VirtualSuDimensions": null,
+          "SuDimensions": null
+        },
+        {
+          "Id": 400,
+          "ChildUnitsType": [],
+          "UnitType": "Rack",
+          "Text": "Rack 4 - hrablo naproti",
+          "VirtualSuDimensions": null,
+          "SuDimensions": null
+        }
+      ]
+    }
+  ],
+  "ItemPlacements": [
+    {
+      "VSURelation": {
+        "VSUnitId": 1,
+        "WarehouseId": 1
+      },
+      "ProductId": 1,
+      "ItemMetadata": {
+        "ProductID": 1,
+        "Barcode": "5054563060709",
+        "Width": 111.0,
+        "Height": 26.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.772818+01:00",
+        "Batch": "630607090",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 1,
+        "WarehouseId": 1
+      },
+      "ProductId": 1,
+      "ItemMetadata": {
+        "ProductID": 1,
+        "Barcode": "5054563060709",
+        "Width": 111.0,
+        "Height": 26.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.873202+01:00",
+        "Batch": "630607091",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 2,
+        "WarehouseId": 1
+      },
+      "ProductId": 1,
+      "ItemMetadata": {
+        "ProductID": 1,
+        "Barcode": "5054563060709",
+        "Width": 111.0,
+        "Height": 26.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.878344+01:00",
+        "Batch": "630607091",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 2,
+        "WarehouseId": 1
+      },
+      "ProductId": 1,
+      "ItemMetadata": {
+        "ProductID": 1,
+        "Barcode": "5054563060709",
+        "Width": 111.0,
+        "Height": 26.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.882701+01:00",
+        "Batch": "630607092",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 3,
+        "WarehouseId": 1
+      },
+      "ProductId": 2,
+      "ItemMetadata": {
+        "ProductID": 2,
+        "Barcode": "8594044142199",
+        "Width": 59.0,
+        "Height": 58.0,
+        "Depth": 135.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.885603+01:00",
+        "Batch": "441421990",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 4,
+        "WarehouseId": 1
+      },
+      "ProductId": 3,
+      "ItemMetadata": {
+        "ProductID": 3,
+        "Barcode": "5000158107038",
+        "Width": 81.0,
+        "Height": 29.0,
+        "Depth": 119.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15+01:00",
+        "Batch": "581070380",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 5,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 44.0,
+        "Height": 36.0,
+        "Depth": 118.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.893756+01:00",
+        "Batch": "1510066150",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 5,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 44.0,
+        "Height": 36.0,
+        "Depth": 118.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.897779+01:00",
+        "Batch": "1510066151",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 6,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 44.0,
+        "Height": 36.0,
+        "Depth": 118.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.901823+01:00",
+        "Batch": "1510066151",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 6,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 44.0,
+        "Height": 36.0,
+        "Depth": 118.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.906998+01:00",
+        "Batch": "1510066152",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 7,
+        "WarehouseId": 1
+      },
+      "ProductId": 5,
+      "ItemMetadata": {
+        "ProductID": 5,
+        "Barcode": "4030031894336",
+        "Width": 62.0,
+        "Height": 56.0,
+        "Depth": 116.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.910973+01:00",
+        "Batch": "318943360",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 8,
+        "WarehouseId": 1
+      },
+      "ProductId": 6,
+      "ItemMetadata": {
+        "ProductID": 6,
+        "Barcode": "00840149637541",
+        "Width": 61.0,
+        "Height": 56.0,
+        "Depth": 113.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.915496+01:00",
+        "Batch": "1496375410",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 9,
+        "WarehouseId": 1
+      },
+      "ProductId": 7,
+      "ItemMetadata": {
+        "ProductID": 7,
+        "Barcode": "4026466056951",
+        "Width": 152.0,
+        "Height": 39.0,
+        "Depth": 39.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.920015+01:00",
+        "Batch": "660569510",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 10,
+        "WarehouseId": 1
+      },
+      "ProductId": 8,
+      "ItemMetadata": {
+        "ProductID": 8,
+        "Barcode": "05900411004909",
+        "Width": 78.0,
+        "Height": 79.0,
+        "Depth": 134.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.925105+01:00",
+        "Batch": "4110049090",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 10,
+        "WarehouseId": 1
+      },
+      "ProductId": 8,
+      "ItemMetadata": {
+        "ProductID": 8,
+        "Barcode": "05900411004909",
+        "Width": 78.0,
+        "Height": 79.0,
+        "Depth": 134.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.930744+01:00",
+        "Batch": "4110049091",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 11,
+        "WarehouseId": 1
+      },
+      "ProductId": 8,
+      "ItemMetadata": {
+        "ProductID": 8,
+        "Barcode": "05900411004909",
+        "Width": 78.0,
+        "Height": 79.0,
+        "Depth": 134.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.936384+01:00",
+        "Batch": "4110049091",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 12,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 63.0,
+        "Height": 41.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15+01:00",
+        "Batch": "217824470",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 12,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 63.0,
+        "Height": 41.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.950129+01:00",
+        "Batch": "217824471",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 13,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 63.0,
+        "Height": 41.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.954978+01:00",
+        "Batch": "217824471",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 13,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 63.0,
+        "Height": 41.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.961069+01:00",
+        "Batch": "217824472",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 14,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 63.0,
+        "Height": 41.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:15.967465+01:00",
+        "Batch": "217824472",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 15,
+        "WarehouseId": 1
+      },
+      "ProductId": 10,
+      "ItemMetadata": {
+        "ProductID": 10,
+        "Barcode": "3574660403091",
+        "Width": 33.0,
+        "Height": 36.0,
+        "Depth": 116.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.028944+01:00",
+        "Batch": "604030910",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 16,
+        "WarehouseId": 1
+      },
+      "ProductId": 11,
+      "ItemMetadata": {
+        "ProductID": 11,
+        "Barcode": "08592387001470",
+        "Width": 50.0,
+        "Height": 111.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16+01:00",
+        "Batch": "3870014700",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 17,
+        "WarehouseId": 1
+      },
+      "ProductId": 12,
+      "ItemMetadata": {
+        "ProductID": 12,
+        "Barcode": "8437004649355",
+        "Width": 42.0,
+        "Height": 38.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.049279+01:00",
+        "Batch": "046493550",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 17,
+        "WarehouseId": 1
+      },
+      "ProductId": 12,
+      "ItemMetadata": {
+        "ProductID": 12,
+        "Barcode": "8437004649355",
+        "Width": 42.0,
+        "Height": 38.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.058697+01:00",
+        "Batch": "046493551",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 18,
+        "WarehouseId": 1
+      },
+      "ProductId": 12,
+      "ItemMetadata": {
+        "ProductID": 12,
+        "Barcode": "8437004649355",
+        "Width": 42.0,
+        "Height": 38.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.066549+01:00",
+        "Batch": "046493551",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 19,
+        "WarehouseId": 1
+      },
+      "ProductId": 13,
+      "ItemMetadata": {
+        "ProductID": 13,
+        "Barcode": "08592387019246",
+        "Width": 123.0,
+        "Height": 57.0,
+        "Depth": 88.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.075224+01:00",
+        "Batch": "3870192460",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 19,
+        "WarehouseId": 1
+      },
+      "ProductId": 13,
+      "ItemMetadata": {
+        "ProductID": 13,
+        "Barcode": "08592387019246",
+        "Width": 123.0,
+        "Height": 57.0,
+        "Depth": 88.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16+01:00",
+        "Batch": "3870192461",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 20,
+        "WarehouseId": 1
+      },
+      "ProductId": 14,
+      "ItemMetadata": {
+        "ProductID": 14,
+        "Barcode": "08594059861672",
+        "Width": 95.0,
+        "Height": 22.0,
+        "Depth": 66.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.091003+01:00",
+        "Batch": "0598616720",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 21,
+        "WarehouseId": 1
+      },
+      "ProductId": 15,
+      "ItemMetadata": {
+        "ProductID": 15,
+        "Barcode": "4029799128746",
+        "Width": 114.0,
+        "Height": 41.0,
+        "Depth": 41.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.099721+01:00",
+        "Batch": "991287460",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 21,
+        "WarehouseId": 1
+      },
+      "ProductId": 15,
+      "ItemMetadata": {
+        "ProductID": 15,
+        "Barcode": "4029799128746",
+        "Width": 114.0,
+        "Height": 41.0,
+        "Depth": 41.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.108845+01:00",
+        "Batch": "991287461",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 22,
+        "WarehouseId": 1
+      },
+      "ProductId": 16,
+      "ItemMetadata": {
+        "ProductID": 16,
+        "Barcode": "08594739268395",
+        "Width": 103.0,
+        "Height": 29.0,
+        "Depth": 44.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.119622+01:00",
+        "Batch": "7392683950",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 22,
+        "WarehouseId": 1
+      },
+      "ProductId": 16,
+      "ItemMetadata": {
+        "ProductID": 16,
+        "Barcode": "08594739268395",
+        "Width": 103.0,
+        "Height": 29.0,
+        "Depth": 44.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.129702+01:00",
+        "Batch": "7392683951",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 22,
+        "WarehouseId": 1
+      },
+      "ProductId": 16,
+      "ItemMetadata": {
+        "ProductID": 16,
+        "Barcode": "08594739268395",
+        "Width": 103.0,
+        "Height": 29.0,
+        "Depth": 44.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.137346+01:00",
+        "Batch": "7392683951",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 2,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 23,
+        "WarehouseId": 1
+      },
+      "ProductId": 17,
+      "ItemMetadata": {
+        "ProductID": 17,
+        "Barcode": "3574661403977",
+        "Width": 111.0,
+        "Height": 41.0,
+        "Depth": 40.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.145687+01:00",
+        "Batch": "614039770",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 23,
+        "WarehouseId": 1
+      },
+      "ProductId": 17,
+      "ItemMetadata": {
+        "ProductID": 17,
+        "Barcode": "3574661403977",
+        "Width": 111.0,
+        "Height": 41.0,
+        "Depth": 40.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.156499+01:00",
+        "Batch": "614039771",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 23,
+        "WarehouseId": 1
+      },
+      "ProductId": 17,
+      "ItemMetadata": {
+        "ProductID": 17,
+        "Barcode": "3574661403977",
+        "Width": 111.0,
+        "Height": 41.0,
+        "Depth": 40.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.164464+01:00",
+        "Batch": "614039771",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 2,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 24,
+        "WarehouseId": 1
+      },
+      "ProductId": 18,
+      "ItemMetadata": {
+        "ProductID": 18,
+        "Barcode": "08590335507470",
+        "Width": 117.0,
+        "Height": 54.0,
+        "Depth": 102.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.173428+01:00",
+        "Batch": "3355074700",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 25,
+        "WarehouseId": 1
+      },
+      "ProductId": 19,
+      "ItemMetadata": {
+        "ProductID": 19,
+        "Barcode": "08594002950330",
+        "Width": 46.0,
+        "Height": 44.0,
+        "Depth": 84.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.183464+01:00",
+        "Batch": "0029503300",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 25,
+        "WarehouseId": 1
+      },
+      "ProductId": 19,
+      "ItemMetadata": {
+        "ProductID": 19,
+        "Barcode": "08594002950330",
+        "Width": 46.0,
+        "Height": 44.0,
+        "Depth": 84.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.194109+01:00",
+        "Batch": "0029503301",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 25,
+        "WarehouseId": 1
+      },
+      "ProductId": 19,
+      "ItemMetadata": {
+        "ProductID": 19,
+        "Barcode": "08594002950330",
+        "Width": 46.0,
+        "Height": 44.0,
+        "Depth": 84.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.202309+01:00",
+        "Batch": "0029503301",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 2,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 26,
+        "WarehouseId": 1
+      },
+      "ProductId": 20,
+      "ItemMetadata": {
+        "ProductID": 20,
+        "Barcode": "5060163211021",
+        "Width": 50.0,
+        "Height": 61.0,
+        "Depth": 137.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.211643+01:00",
+        "Batch": "632110210",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 26,
+        "WarehouseId": 1
+      },
+      "ProductId": 20,
+      "ItemMetadata": {
+        "ProductID": 20,
+        "Barcode": "5060163211021",
+        "Width": 50.0,
+        "Height": 61.0,
+        "Depth": 137.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16+01:00",
+        "Batch": "632110211",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 27,
+        "WarehouseId": 1
+      },
+      "ProductId": 20,
+      "ItemMetadata": {
+        "ProductID": 20,
+        "Barcode": "5060163211021",
+        "Width": 50.0,
+        "Height": 61.0,
+        "Depth": 137.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.233121+01:00",
+        "Batch": "632110211",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 27,
+        "WarehouseId": 1
+      },
+      "ProductId": 20,
+      "ItemMetadata": {
+        "ProductID": 20,
+        "Barcode": "5060163211021",
+        "Width": 50.0,
+        "Height": 61.0,
+        "Depth": 137.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16.243972+01:00",
+        "Batch": "632110212",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 28,
+        "WarehouseId": 1
+      },
+      "ProductId": 20,
+      "ItemMetadata": {
+        "ProductID": 20,
+        "Barcode": "5060163211021",
+        "Width": 50.0,
+        "Height": 61.0,
+        "Depth": 137.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:05:16+01:00",
+        "Batch": "632110212",
+        "DeliveryId": "345",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 29,
+        "WarehouseId": 1
+      },
+      "ProductId": 5596,
+      "ItemMetadata": {
+        "ProductID": 5596,
+        "Barcode": "3573994002635",
+        "Width": 68.0,
+        "Height": 29.0,
+        "Depth": 57.0,
+        "Weight": 0.0,
+        "Expiration": "2028-03-20T01:35:36+01:00",
+        "Batch": "940026351",
+        "DeliveryId": "DEL_20251024134954",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 30,
+        "WarehouseId": 1
+      },
+      "ProductId": 6862,
+      "ItemMetadata": {
+        "ProductID": 6862,
+        "Barcode": "5000167015461",
+        "Width": 107.0,
+        "Height": 21.0,
+        "Depth": 48.0,
+        "Weight": 0.0,
+        "Expiration": "2027-03-20T01:35:36.560835+01:00",
+        "Batch": "670154610",
+        "DeliveryId": "DEL_20251024140727",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 31,
+        "WarehouseId": 1
+      },
+      "ProductId": 4326,
+      "ItemMetadata": {
+        "ProductID": 4326,
+        "Barcode": "8594737230219",
+        "Width": 106.0,
+        "Height": 51.0,
+        "Depth": 50.0,
+        "Weight": 0.0,
+        "Expiration": "2028-01-20T01:35:36+01:00",
+        "Batch": "372302191",
+        "DeliveryId": "DEL_20251024140838",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 24,
+        "WarehouseId": 1
+      },
+      "ProductId": 18,
+      "ItemMetadata": {
+        "ProductID": 18,
+        "Barcode": "08590335507470",
+        "Width": 117.0,
+        "Height": 54.0,
+        "Depth": 102.0,
+        "Weight": 0.0,
+        "Expiration": "2027-03-20T01:35:36.560773+01:00",
+        "Batch": "3355074700",
+        "DeliveryId": "DEL_20251024140903",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 32,
+        "WarehouseId": 1
+      },
+      "ProductId": 3979,
+      "ItemMetadata": {
+        "ProductID": 3979,
+        "Barcode": "8592387017426",
+        "Width": 52.0,
+        "Height": 36.0,
+        "Depth": 86.0,
+        "Weight": 0.0,
+        "Expiration": "2026-11-20T01:35:36.560802+01:00",
+        "Batch": "870174261",
+        "DeliveryId": "DEL_20251024140934",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 33,
+        "WarehouseId": 1
+      },
+      "ProductId": 875,
+      "ItemMetadata": {
+        "ProductID": 875,
+        "Barcode": "8594052051407",
+        "Width": 59.0,
+        "Height": 30.0,
+        "Depth": 101.0,
+        "Weight": 0.0,
+        "Expiration": "2027-11-20T01:35:36.560783+01:00",
+        "Batch": "520514070",
+        "DeliveryId": "DEL_20251024141005",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 34,
+        "WarehouseId": 1
+      },
+      "ProductId": 9,
+      "ItemMetadata": {
+        "ProductID": 9,
+        "Barcode": "5997321782447",
+        "Width": 117.0,
+        "Height": 42.0,
+        "Depth": 62.0,
+        "Weight": 0.0,
+        "Expiration": "2027-06-20T01:35:36.560764+02:00",
+        "Batch": "217824471",
+        "DeliveryId": "DEL_20251024141115",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 35,
+        "WarehouseId": 1
+      },
+      "ProductId": 8983,
+      "ItemMetadata": {
+        "ProductID": 8983,
+        "Barcode": "08594052051414",
+        "Width": 57.0,
+        "Height": 36.0,
+        "Depth": 124.0,
+        "Weight": 0.0,
+        "Expiration": "2027-03-20T01:35:36.560839+01:00",
+        "Batch": "0520514141",
+        "DeliveryId": "DEL_20251024141145",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 36,
+        "WarehouseId": 1
+      },
+      "ProductId": 9211,
+      "ItemMetadata": {
+        "ProductID": 9211,
+        "Barcode": "8034125181223",
+        "Width": 71.0,
+        "Height": 35.0,
+        "Depth": 110.0,
+        "Weight": 0.0,
+        "Expiration": "2026-09-20T01:35:36.560822+02:00",
+        "Batch": "251812231",
+        "DeliveryId": "DEL_20251024141424",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 37,
+        "WarehouseId": 1
+      },
+      "ProductId": 478,
+      "ItemMetadata": {
+        "ProductID": 478,
+        "Barcode": "05099151926210",
+        "Width": 82.0,
+        "Height": 33.0,
+        "Depth": 89.0,
+        "Weight": 0.0,
+        "Expiration": "2026-11-20T01:35:36.560805+01:00",
+        "Batch": "1519262101",
+        "DeliveryId": "DEL_20251024141603",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 38,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 44.0,
+        "Height": 36.0,
+        "Depth": 118.0,
+        "Weight": 0.0,
+        "Expiration": "2027-03-20T01:35:36.560753+01:00",
+        "Batch": "1510066150",
+        "DeliveryId": "DEL_20251024141655",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 39,
+        "WarehouseId": 1
+      },
+      "ProductId": 2664,
+      "ItemMetadata": {
+        "ProductID": 2664,
+        "Barcode": "05702589307802",
+        "Width": 61.0,
+        "Height": 25.0,
+        "Depth": 107.0,
+        "Weight": 0.0,
+        "Expiration": "2027-05-20T01:35:36.560775+02:00",
+        "Batch": "5893078020",
+        "DeliveryId": "DEL_20251024141804",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 40,
+        "WarehouseId": 1
+      },
+      "ProductId": 11,
+      "ItemMetadata": {
+        "ProductID": 11,
+        "Barcode": "08592387001470",
+        "Width": 107.0,
+        "Height": 52.0,
+        "Depth": 72.0,
+        "Weight": 0.0,
+        "Expiration": "2026-08-20T01:35:36.560765+02:00",
+        "Batch": "3870014701",
+        "DeliveryId": "DEL_20251024141836",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 41,
+        "WarehouseId": 1
+      },
+      "ProductId": 5284,
+      "ItemMetadata": {
+        "ProductID": 5284,
+        "Barcode": "3427731886678",
+        "Width": 132.0,
+        "Height": 72.0,
+        "Depth": 51.0,
+        "Weight": 0.0,
+        "Expiration": "2026-09-20T01:35:36.560859+02:00",
+        "Batch": "318866780",
+        "DeliveryId": "DEL_20251024141907",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 42,
+        "WarehouseId": 1
+      },
+      "ProductId": 7408,
+      "ItemMetadata": {
+        "ProductID": 7408,
+        "Barcode": "5000158100794",
+        "Width": 66.0,
+        "Height": 28.0,
+        "Depth": 106.0,
+        "Weight": 0.0,
+        "Expiration": "2026-12-20T01:35:36.560801+01:00",
+        "Batch": "581007941",
+        "DeliveryId": "DEL_20251024142000",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 43,
+        "WarehouseId": 1
+      },
+      "ProductId": 1691,
+      "ItemMetadata": {
+        "ProductID": 1691,
+        "Barcode": "8594739024892",
+        "Width": 45.0,
+        "Height": 23.0,
+        "Depth": 107.0,
+        "Weight": 0.0,
+        "Expiration": "2026-10-20T01:35:36.560791+02:00",
+        "Batch": "390248921",
+        "DeliveryId": "DEL_20251024142035",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 44,
+        "WarehouseId": 1
+      },
+      "ProductId": 1772,
+      "ItemMetadata": {
+        "ProductID": 1772,
+        "Barcode": "8595116532818",
+        "Width": 59.0,
+        "Height": 52.0,
+        "Depth": 95.0,
+        "Weight": 0.0,
+        "Expiration": "2027-02-20T01:35:36.560815+01:00",
+        "Batch": "165328181",
+        "DeliveryId": "DEL_20251024142123",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 45,
+        "WarehouseId": 1
+      },
+      "ProductId": 1256,
+      "ItemMetadata": {
+        "ProductID": 1256,
+        "Barcode": "5702191023794",
+        "Width": 125.0,
+        "Height": 74.0,
+        "Depth": 36.0,
+        "Weight": 0.0,
+        "Expiration": "2027-02-20T01:35:36.560856+01:00",
+        "Batch": "910237940",
+        "DeliveryId": "DEL_20251024142218",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 29,
+        "WarehouseId": 1
+      },
+      "ProductId": 5596,
+      "ItemMetadata": {
+        "ProductID": 5596,
+        "Barcode": "3573994002635",
+        "Width": 67.0,
+        "Height": 28.0,
+        "Depth": 57.0,
+        "Weight": 0.0,
+        "Expiration": "2027-02-20T01:35:36+01:00",
+        "Batch": "940026351",
+        "DeliveryId": "DEL_20251024142254",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 46,
+        "WarehouseId": 1
+      },
+      "ProductId": 16,
+      "ItemMetadata": {
+        "ProductID": 16,
+        "Barcode": "08594739268395",
+        "Width": 44.0,
+        "Height": 108.0,
+        "Depth": 108.0,
+        "Weight": 0.0,
+        "Expiration": "2028-03-20T01:35:36.560771+01:00",
+        "Batch": "7392683951",
+        "DeliveryId": "DEL_20251024142348",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 47,
+        "WarehouseId": 1
+      },
+      "ProductId": 4126,
+      "ItemMetadata": {
+        "ProductID": 4126,
+        "Barcode": "08594052051407",
+        "Width": 67.0,
+        "Height": 38.0,
+        "Depth": 127.0,
+        "Weight": 0.0,
+        "Expiration": "2028-01-20T01:35:36.560865+01:00",
+        "Batch": "0520514070",
+        "DeliveryId": "DEL_20251024142421",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 48,
+        "WarehouseId": 1
+      },
+      "ProductId": 8319,
+      "ItemMetadata": {
+        "ProductID": 8319,
+        "Barcode": "3574660402100",
+        "Width": 34.0,
+        "Height": 34.0,
+        "Depth": 113.0,
+        "Weight": 0.0,
+        "Expiration": "2027-10-20T01:35:36+02:00",
+        "Batch": "604021000",
+        "DeliveryId": "DEL_20251024142446",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 7,
+        "WarehouseId": 1
+      },
+      "ProductId": 5,
+      "ItemMetadata": {
+        "ProductID": 5,
+        "Barcode": "4030031894336",
+        "Width": 62.0,
+        "Height": 56.0,
+        "Depth": 116.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:35:36.560758+01:00",
+        "Batch": "318943360",
+        "DeliveryId": "DEL_20251024142509",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 49,
+        "WarehouseId": 1
+      },
+      "ProductId": 5505,
+      "ItemMetadata": {
+        "ProductID": 5505,
+        "Barcode": "8594060895055",
+        "Width": 92.0,
+        "Height": 51.0,
+        "Depth": 81.0,
+        "Weight": 0.0,
+        "Expiration": "2027-03-20T01:35:36.560806+01:00",
+        "Batch": "608950550",
+        "DeliveryId": "DEL_20251024142629",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 50,
+        "WarehouseId": 1
+      },
+      "ProductId": 2831,
+      "ItemMetadata": {
+        "ProductID": 2831,
+        "Barcode": "08588000227358",
+        "Width": 71.0,
+        "Height": 31.0,
+        "Depth": 32.0,
+        "Weight": 0.0,
+        "Expiration": "2027-02-20T01:35:36.560788+01:00",
+        "Batch": "0002273580",
+        "DeliveryId": "DEL_20251024142651",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 50,
+        "WarehouseId": 1
+      },
+      "ProductId": 2831,
+      "ItemMetadata": {
+        "ProductID": 2831,
+        "Barcode": "08588000227358",
+        "Width": 72.0,
+        "Height": 31.0,
+        "Depth": 32.0,
+        "Weight": 0.0,
+        "Expiration": "2026-08-20T01:35:36.560789+02:00",
+        "Batch": "0002273581",
+        "DeliveryId": "DEL_20251024142719",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 51,
+        "WarehouseId": 1
+      },
+      "ProductId": 8344,
+      "ItemMetadata": {
+        "ProductID": 8344,
+        "Barcode": "08594739224247",
+        "Width": 61.0,
+        "Height": 34.0,
+        "Depth": 109.0,
+        "Weight": 0.0,
+        "Expiration": "2027-05-20T01:35:36.560794+02:00",
+        "Batch": "7392242471",
+        "DeliveryId": "DEL_20251024142746",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 52,
+        "WarehouseId": 1
+      },
+      "ProductId": 329,
+      "ItemMetadata": {
+        "ProductID": 329,
+        "Barcode": "08590335507241",
+        "Width": 102.0,
+        "Height": 55.0,
+        "Depth": 50.0,
+        "Weight": 0.0,
+        "Expiration": "2027-07-20T01:35:36.560804+02:00",
+        "Batch": "3355072411",
+        "DeliveryId": "DEL_20251024142809",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 52,
+        "WarehouseId": 1
+      },
+      "ProductId": 329,
+      "ItemMetadata": {
+        "ProductID": 329,
+        "Barcode": "08590335507241",
+        "Width": 101.0,
+        "Height": 54.0,
+        "Depth": 50.0,
+        "Weight": 0.0,
+        "Expiration": "2026-12-20T01:35:36.560804+01:00",
+        "Batch": "3355072410",
+        "DeliveryId": "DEL_20251024142831",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 53,
+        "WarehouseId": 1
+      },
+      "ProductId": 4283,
+      "ItemMetadata": {
+        "ProductID": 4283,
+        "Barcode": "4029799119843",
+        "Width": 94.0,
+        "Height": 30.0,
+        "Depth": 77.0,
+        "Weight": 0.0,
+        "Expiration": "2026-11-20T01:35:36.560842+01:00",
+        "Batch": "991198431",
+        "DeliveryId": "DEL_20251024142854",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 54,
+        "WarehouseId": 1
+      },
+      "ProductId": 3127,
+      "ItemMetadata": {
+        "ProductID": 3127,
+        "Barcode": "08594739226791",
+        "Width": 64.0,
+        "Height": 41.0,
+        "Depth": 94.0,
+        "Weight": 0.0,
+        "Expiration": "2027-04-20T01:35:36.560836+02:00",
+        "Batch": "7392267910",
+        "DeliveryId": "DEL_20251024142934",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 9,
+        "WarehouseId": 1
+      },
+      "ProductId": 7,
+      "ItemMetadata": {
+        "ProductID": 7,
+        "Barcode": "4026466056951",
+        "Width": 152.0,
+        "Height": 39.0,
+        "Depth": 39.0,
+        "Weight": 0.0,
+        "Expiration": "2027-08-20T01:35:36.560761+02:00",
+        "Batch": "660569511",
+        "DeliveryId": "DEL_20251024142959",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 55,
+        "WarehouseId": 1
+      },
+      "ProductId": 9071,
+      "ItemMetadata": {
+        "ProductID": 9071,
+        "Barcode": "08594056565634",
+        "Width": 55.0,
+        "Height": 35.0,
+        "Depth": 99.0,
+        "Weight": 0.0,
+        "Expiration": "2028-03-20T01:35:36.560824+01:00",
+        "Batch": "0565656340",
+        "DeliveryId": "DEL_20251024143304",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 56,
+        "WarehouseId": 1
+      },
+      "ProductId": 2140,
+      "ItemMetadata": {
+        "ProductID": 2140,
+        "Barcode": "03573994002635",
+        "Width": 68.0,
+        "Height": 29.0,
+        "Depth": 57.0,
+        "Weight": 0.0,
+        "Expiration": "2027-09-20T01:35:36.560862+02:00",
+        "Batch": "9940026350",
+        "DeliveryId": "DEL_20251024143338",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 57,
+        "WarehouseId": 1
+      },
+      "ProductId": 7291,
+      "ItemMetadata": {
+        "ProductID": 7291,
+        "Barcode": "8594739268395",
+        "Width": 104.0,
+        "Height": 29.0,
+        "Depth": 44.0,
+        "Weight": 0.0,
+        "Expiration": "2026-08-20T01:35:36.560857+02:00",
+        "Batch": "392683950",
+        "DeliveryId": "DEL_20251024143408",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 58,
+        "WarehouseId": 1
+      },
+      "ProductId": 10,
+      "ItemMetadata": {
+        "ProductID": 10,
+        "Barcode": "3574660403091",
+        "Width": 113.0,
+        "Height": 34.0,
+        "Depth": 35.0,
+        "Weight": 0.0,
+        "Expiration": "2027-06-20T01:35:36.560764+02:00",
+        "Batch": "604030911",
+        "DeliveryId": "DEL_20251024143442",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 59,
+        "WarehouseId": 1
+      },
+      "ProductId": 14,
+      "ItemMetadata": {
+        "ProductID": 14,
+        "Barcode": "08594059861672",
+        "Width": 68.0,
+        "Height": 22.0,
+        "Depth": 97.0,
+        "Weight": 0.0,
+        "Expiration": "2027-11-20T01:35:36.560769+01:00",
+        "Batch": "0598616721",
+        "DeliveryId": "DEL_20251024143503",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 20,
+        "WarehouseId": 1
+      },
+      "ProductId": 14,
+      "ItemMetadata": {
+        "ProductID": 14,
+        "Barcode": "08594059861672",
+        "Width": 95.0,
+        "Height": 22.0,
+        "Depth": 66.0,
+        "Weight": 0.0,
+        "Expiration": "2026-10-20T01:35:36.560769+02:00",
+        "Batch": "0598616720",
+        "DeliveryId": "DEL_20251024143526",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 60,
+        "WarehouseId": 1
+      },
+      "ProductId": 1772,
+      "ItemMetadata": {
+        "ProductID": 1772,
+        "Barcode": "8595116532818",
+        "Width": 96.0,
+        "Height": 81.0,
+        "Depth": 60.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:35:36.560815+01:00",
+        "Batch": "165328181",
+        "DeliveryId": "DEL_20251024143643",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 61,
+        "WarehouseId": 1
+      },
+      "ProductId": 1343,
+      "ItemMetadata": {
+        "ProductID": 1343,
+        "Barcode": "08594158894366",
+        "Width": 103.0,
+        "Height": 59.0,
+        "Depth": 155.0,
+        "Weight": 0.0,
+        "Expiration": "2027-10-20T01:35:36.560785+02:00",
+        "Batch": "1588943661",
+        "DeliveryId": "DEL_20251024143705",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 62,
+        "WarehouseId": 1
+      },
+      "ProductId": 2094,
+      "ItemMetadata": {
+        "ProductID": 2094,
+        "Barcode": "08592387018300",
+        "Width": 105.0,
+        "Height": 43.0,
+        "Depth": 69.0,
+        "Weight": 0.0,
+        "Expiration": "2027-04-20T01:35:36+02:00",
+        "Batch": "3870183000",
+        "DeliveryId": "DEL_20251024143729",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 63,
+        "WarehouseId": 1
+      },
+      "ProductId": 6956,
+      "ItemMetadata": {
+        "ProductID": 6956,
+        "Barcode": "8595618501077",
+        "Width": 124.0,
+        "Height": 54.0,
+        "Depth": 51.0,
+        "Weight": 0.0,
+        "Expiration": "2028-03-20T01:35:36.560814+01:00",
+        "Batch": "185010771",
+        "DeliveryId": "DEL_20251024143801",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 64,
+        "WarehouseId": 1
+      },
+      "ProductId": 9186,
+      "ItemMetadata": {
+        "ProductID": 9186,
+        "Barcode": "8594739226791",
+        "Width": 64.0,
+        "Height": 40.0,
+        "Depth": 94.0,
+        "Weight": 0.0,
+        "Expiration": "2027-02-20T01:35:36.560831+01:00",
+        "Batch": "392267911",
+        "DeliveryId": "DEL_20251024143826",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 65,
+        "WarehouseId": 1
+      },
+      "ProductId": 7104,
+      "ItemMetadata": {
+        "ProductID": 7104,
+        "Barcode": "08594002390822",
+        "Width": 53.0,
+        "Height": 55.0,
+        "Depth": 72.0,
+        "Weight": 0.0,
+        "Expiration": "2026-10-20T01:35:36.560858+02:00",
+        "Batch": "0023908220",
+        "DeliveryId": "DEL_20251024143851",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 66,
+        "WarehouseId": 1
+      },
+      "ProductId": 8344,
+      "ItemMetadata": {
+        "ProductID": 8344,
+        "Barcode": "08594739224247",
+        "Width": 107.0,
+        "Height": 35.0,
+        "Depth": 62.0,
+        "Weight": 0.0,
+        "Expiration": "2027-01-20T01:35:36.560794+01:00",
+        "Batch": "7392242470",
+        "DeliveryId": "DEL_20251024143914",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 67,
+        "WarehouseId": 1
+      },
+      "ProductId": 5844,
+      "ItemMetadata": {
+        "ProductID": 5844,
+        "Barcode": "0088159507175",
+        "Width": 62.0,
+        "Height": 28.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2026-12-20T01:35:36+01:00",
+        "Batch": "595071750",
+        "DeliveryId": "DEL_20251024143936",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 68,
+        "WarehouseId": 1
+      },
+      "ProductId": 1705,
+      "ItemMetadata": {
+        "ProductID": 1705,
+        "Barcode": "5099151006684",
+        "Width": 67.0,
+        "Height": 31.0,
+        "Depth": 103.0,
+        "Weight": 0.0,
+        "Expiration": "2026-09-20T01:35:36.560859+02:00",
+        "Batch": "510066840",
+        "DeliveryId": "DEL_20251024144018",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 11,
+        "WarehouseId": 1
+      },
+      "ProductId": 8,
+      "ItemMetadata": {
+        "ProductID": 8,
+        "Barcode": "05900411004909",
+        "Width": 78.0,
+        "Height": 79.0,
+        "Depth": 134.0,
+        "Weight": 0.0,
+        "Expiration": "2026-12-20T01:35:36.560762+01:00",
+        "Batch": "4110049090",
+        "DeliveryId": "DEL_20251024144041",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 1,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 69,
+        "WarehouseId": 1
+      },
+      "ProductId": 4,
+      "ItemMetadata": {
+        "ProductID": 4,
+        "Barcode": "05099151006615",
+        "Width": 43.0,
+        "Height": 117.0,
+        "Depth": 120.0,
+        "Weight": 0.0,
+        "Expiration": "2027-07-20T01:35:36.560757+02:00",
+        "Batch": "1510066151",
+        "DeliveryId": "DEL_20251024144111",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    },
+    {
+      "VSURelation": {
+        "VSUnitId": 70,
+        "WarehouseId": 1
+      },
+      "ProductId": 6832,
+      "ItemMetadata": {
+        "ProductID": 6832,
+        "Barcode": "8595058907095",
+        "Width": 50.0,
+        "Height": 53.0,
+        "Depth": 91.0,
+        "Weight": 0.0,
+        "Expiration": "2027-10-20T01:35:36.560796+02:00",
+        "Batch": "589070951",
+        "DeliveryId": "DEL_20251024144133",
+        "WarehouseID": 1
+      },
+      "IND": true,
+      "StockIndex": 0,
+      "ReservationId": null
+    }
+  ],
+  "Items": [
+    {
+      "ProductID": 1,
+      "Barcode": "5054563060709",
+      "Width": 111.0,
+      "Height": 26.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.772818+01:00",
+      "Batch": "630607090",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1,
+      "Barcode": "5054563060709",
+      "Width": 111.0,
+      "Height": 26.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.873202+01:00",
+      "Batch": "630607091",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1,
+      "Barcode": "5054563060709",
+      "Width": 111.0,
+      "Height": 26.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.878344+01:00",
+      "Batch": "630607091",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1,
+      "Barcode": "5054563060709",
+      "Width": 111.0,
+      "Height": 26.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.882701+01:00",
+      "Batch": "630607092",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2,
+      "Barcode": "8594044142199",
+      "Width": 59.0,
+      "Height": 58.0,
+      "Depth": 135.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.885603+01:00",
+      "Batch": "441421990",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 3,
+      "Barcode": "5000158107038",
+      "Width": 81.0,
+      "Height": 29.0,
+      "Depth": 119.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15+01:00",
+      "Batch": "581070380",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 44.0,
+      "Height": 36.0,
+      "Depth": 118.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.893756+01:00",
+      "Batch": "1510066150",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 44.0,
+      "Height": 36.0,
+      "Depth": 118.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.897779+01:00",
+      "Batch": "1510066151",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 44.0,
+      "Height": 36.0,
+      "Depth": 118.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.901823+01:00",
+      "Batch": "1510066151",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 44.0,
+      "Height": 36.0,
+      "Depth": 118.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.906998+01:00",
+      "Batch": "1510066152",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5,
+      "Barcode": "4030031894336",
+      "Width": 62.0,
+      "Height": 56.0,
+      "Depth": 116.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.910973+01:00",
+      "Batch": "318943360",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 6,
+      "Barcode": "00840149637541",
+      "Width": 61.0,
+      "Height": 56.0,
+      "Depth": 113.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.915496+01:00",
+      "Batch": "1496375410",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 7,
+      "Barcode": "4026466056951",
+      "Width": 152.0,
+      "Height": 39.0,
+      "Depth": 39.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.920015+01:00",
+      "Batch": "660569510",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8,
+      "Barcode": "05900411004909",
+      "Width": 78.0,
+      "Height": 79.0,
+      "Depth": 134.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.925105+01:00",
+      "Batch": "4110049090",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8,
+      "Barcode": "05900411004909",
+      "Width": 78.0,
+      "Height": 79.0,
+      "Depth": 134.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.930744+01:00",
+      "Batch": "4110049091",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8,
+      "Barcode": "05900411004909",
+      "Width": 78.0,
+      "Height": 79.0,
+      "Depth": 134.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.936384+01:00",
+      "Batch": "4110049091",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 63.0,
+      "Height": 41.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15+01:00",
+      "Batch": "217824470",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 63.0,
+      "Height": 41.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.950129+01:00",
+      "Batch": "217824471",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 63.0,
+      "Height": 41.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.954978+01:00",
+      "Batch": "217824471",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 63.0,
+      "Height": 41.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.961069+01:00",
+      "Batch": "217824472",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 63.0,
+      "Height": 41.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:15.967465+01:00",
+      "Batch": "217824472",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 10,
+      "Barcode": "3574660403091",
+      "Width": 33.0,
+      "Height": 36.0,
+      "Depth": 116.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.028944+01:00",
+      "Batch": "604030910",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 11,
+      "Barcode": "08592387001470",
+      "Width": 50.0,
+      "Height": 111.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16+01:00",
+      "Batch": "3870014700",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 12,
+      "Barcode": "8437004649355",
+      "Width": 42.0,
+      "Height": 38.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.049279+01:00",
+      "Batch": "046493550",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 12,
+      "Barcode": "8437004649355",
+      "Width": 42.0,
+      "Height": 38.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.058697+01:00",
+      "Batch": "046493551",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 12,
+      "Barcode": "8437004649355",
+      "Width": 42.0,
+      "Height": 38.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.066549+01:00",
+      "Batch": "046493551",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 13,
+      "Barcode": "08592387019246",
+      "Width": 123.0,
+      "Height": 57.0,
+      "Depth": 88.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.075224+01:00",
+      "Batch": "3870192460",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 13,
+      "Barcode": "08592387019246",
+      "Width": 123.0,
+      "Height": 57.0,
+      "Depth": 88.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16+01:00",
+      "Batch": "3870192461",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 14,
+      "Barcode": "08594059861672",
+      "Width": 95.0,
+      "Height": 22.0,
+      "Depth": 66.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.091003+01:00",
+      "Batch": "0598616720",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 15,
+      "Barcode": "4029799128746",
+      "Width": 114.0,
+      "Height": 41.0,
+      "Depth": 41.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.099721+01:00",
+      "Batch": "991287460",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 15,
+      "Barcode": "4029799128746",
+      "Width": 114.0,
+      "Height": 41.0,
+      "Depth": 41.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.108845+01:00",
+      "Batch": "991287461",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 16,
+      "Barcode": "08594739268395",
+      "Width": 103.0,
+      "Height": 29.0,
+      "Depth": 44.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.119622+01:00",
+      "Batch": "7392683950",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 16,
+      "Barcode": "08594739268395",
+      "Width": 103.0,
+      "Height": 29.0,
+      "Depth": 44.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.129702+01:00",
+      "Batch": "7392683951",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 16,
+      "Barcode": "08594739268395",
+      "Width": 103.0,
+      "Height": 29.0,
+      "Depth": 44.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.137346+01:00",
+      "Batch": "7392683951",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 17,
+      "Barcode": "3574661403977",
+      "Width": 111.0,
+      "Height": 41.0,
+      "Depth": 40.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.145687+01:00",
+      "Batch": "614039770",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 17,
+      "Barcode": "3574661403977",
+      "Width": 111.0,
+      "Height": 41.0,
+      "Depth": 40.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.156499+01:00",
+      "Batch": "614039771",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 17,
+      "Barcode": "3574661403977",
+      "Width": 111.0,
+      "Height": 41.0,
+      "Depth": 40.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.164464+01:00",
+      "Batch": "614039771",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 18,
+      "Barcode": "08590335507470",
+      "Width": 117.0,
+      "Height": 54.0,
+      "Depth": 102.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.173428+01:00",
+      "Batch": "3355074700",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 19,
+      "Barcode": "08594002950330",
+      "Width": 46.0,
+      "Height": 44.0,
+      "Depth": 84.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.183464+01:00",
+      "Batch": "0029503300",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 19,
+      "Barcode": "08594002950330",
+      "Width": 46.0,
+      "Height": 44.0,
+      "Depth": 84.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.194109+01:00",
+      "Batch": "0029503301",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 19,
+      "Barcode": "08594002950330",
+      "Width": 46.0,
+      "Height": 44.0,
+      "Depth": 84.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.202309+01:00",
+      "Batch": "0029503301",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 20,
+      "Barcode": "5060163211021",
+      "Width": 50.0,
+      "Height": 61.0,
+      "Depth": 137.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.211643+01:00",
+      "Batch": "632110210",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 20,
+      "Barcode": "5060163211021",
+      "Width": 50.0,
+      "Height": 61.0,
+      "Depth": 137.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16+01:00",
+      "Batch": "632110211",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 20,
+      "Barcode": "5060163211021",
+      "Width": 50.0,
+      "Height": 61.0,
+      "Depth": 137.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.233121+01:00",
+      "Batch": "632110211",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 20,
+      "Barcode": "5060163211021",
+      "Width": 50.0,
+      "Height": 61.0,
+      "Depth": 137.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16.243972+01:00",
+      "Batch": "632110212",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 20,
+      "Barcode": "5060163211021",
+      "Width": 50.0,
+      "Height": 61.0,
+      "Depth": 137.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:05:16+01:00",
+      "Batch": "632110212",
+      "DeliveryId": "345",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5596,
+      "Barcode": "3573994002635",
+      "Width": 68.0,
+      "Height": 29.0,
+      "Depth": 57.0,
+      "Weight": 0.0,
+      "Expiration": "2028-03-20T01:35:36+01:00",
+      "Batch": "940026351",
+      "DeliveryId": "DEL_20251024134954",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 6862,
+      "Barcode": "5000167015461",
+      "Width": 107.0,
+      "Height": 21.0,
+      "Depth": 48.0,
+      "Weight": 0.0,
+      "Expiration": "2027-03-20T01:35:36.560835+01:00",
+      "Batch": "670154610",
+      "DeliveryId": "DEL_20251024140727",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4326,
+      "Barcode": "8594737230219",
+      "Width": 106.0,
+      "Height": 51.0,
+      "Depth": 50.0,
+      "Weight": 0.0,
+      "Expiration": "2028-01-20T01:35:36+01:00",
+      "Batch": "372302191",
+      "DeliveryId": "DEL_20251024140838",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 18,
+      "Barcode": "08590335507470",
+      "Width": 117.0,
+      "Height": 54.0,
+      "Depth": 102.0,
+      "Weight": 0.0,
+      "Expiration": "2027-03-20T01:35:36.560773+01:00",
+      "Batch": "3355074700",
+      "DeliveryId": "DEL_20251024140903",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 3979,
+      "Barcode": "8592387017426",
+      "Width": 52.0,
+      "Height": 36.0,
+      "Depth": 86.0,
+      "Weight": 0.0,
+      "Expiration": "2026-11-20T01:35:36.560802+01:00",
+      "Batch": "870174261",
+      "DeliveryId": "DEL_20251024140934",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 875,
+      "Barcode": "8594052051407",
+      "Width": 59.0,
+      "Height": 30.0,
+      "Depth": 101.0,
+      "Weight": 0.0,
+      "Expiration": "2027-11-20T01:35:36.560783+01:00",
+      "Batch": "520514070",
+      "DeliveryId": "DEL_20251024141005",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9,
+      "Barcode": "5997321782447",
+      "Width": 117.0,
+      "Height": 42.0,
+      "Depth": 62.0,
+      "Weight": 0.0,
+      "Expiration": "2027-06-20T01:35:36.560764+02:00",
+      "Batch": "217824471",
+      "DeliveryId": "DEL_20251024141115",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8983,
+      "Barcode": "08594052051414",
+      "Width": 57.0,
+      "Height": 36.0,
+      "Depth": 124.0,
+      "Weight": 0.0,
+      "Expiration": "2027-03-20T01:35:36.560839+01:00",
+      "Batch": "0520514141",
+      "DeliveryId": "DEL_20251024141145",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9211,
+      "Barcode": "8034125181223",
+      "Width": 71.0,
+      "Height": 35.0,
+      "Depth": 110.0,
+      "Weight": 0.0,
+      "Expiration": "2026-09-20T01:35:36.560822+02:00",
+      "Batch": "251812231",
+      "DeliveryId": "DEL_20251024141424",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 478,
+      "Barcode": "05099151926210",
+      "Width": 82.0,
+      "Height": 33.0,
+      "Depth": 89.0,
+      "Weight": 0.0,
+      "Expiration": "2026-11-20T01:35:36.560805+01:00",
+      "Batch": "1519262101",
+      "DeliveryId": "DEL_20251024141603",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 44.0,
+      "Height": 36.0,
+      "Depth": 118.0,
+      "Weight": 0.0,
+      "Expiration": "2027-03-20T01:35:36.560753+01:00",
+      "Batch": "1510066150",
+      "DeliveryId": "DEL_20251024141655",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2664,
+      "Barcode": "05702589307802",
+      "Width": 61.0,
+      "Height": 25.0,
+      "Depth": 107.0,
+      "Weight": 0.0,
+      "Expiration": "2027-05-20T01:35:36.560775+02:00",
+      "Batch": "5893078020",
+      "DeliveryId": "DEL_20251024141804",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 11,
+      "Barcode": "08592387001470",
+      "Width": 107.0,
+      "Height": 52.0,
+      "Depth": 72.0,
+      "Weight": 0.0,
+      "Expiration": "2026-08-20T01:35:36.560765+02:00",
+      "Batch": "3870014701",
+      "DeliveryId": "DEL_20251024141836",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5284,
+      "Barcode": "3427731886678",
+      "Width": 132.0,
+      "Height": 72.0,
+      "Depth": 51.0,
+      "Weight": 0.0,
+      "Expiration": "2026-09-20T01:35:36.560859+02:00",
+      "Batch": "318866780",
+      "DeliveryId": "DEL_20251024141907",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 7408,
+      "Barcode": "5000158100794",
+      "Width": 66.0,
+      "Height": 28.0,
+      "Depth": 106.0,
+      "Weight": 0.0,
+      "Expiration": "2026-12-20T01:35:36.560801+01:00",
+      "Batch": "581007941",
+      "DeliveryId": "DEL_20251024142000",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1691,
+      "Barcode": "8594739024892",
+      "Width": 45.0,
+      "Height": 23.0,
+      "Depth": 107.0,
+      "Weight": 0.0,
+      "Expiration": "2026-10-20T01:35:36.560791+02:00",
+      "Batch": "390248921",
+      "DeliveryId": "DEL_20251024142035",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1772,
+      "Barcode": "8595116532818",
+      "Width": 59.0,
+      "Height": 52.0,
+      "Depth": 95.0,
+      "Weight": 0.0,
+      "Expiration": "2027-02-20T01:35:36.560815+01:00",
+      "Batch": "165328181",
+      "DeliveryId": "DEL_20251024142123",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1256,
+      "Barcode": "5702191023794",
+      "Width": 125.0,
+      "Height": 74.0,
+      "Depth": 36.0,
+      "Weight": 0.0,
+      "Expiration": "2027-02-20T01:35:36.560856+01:00",
+      "Batch": "910237940",
+      "DeliveryId": "DEL_20251024142218",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5596,
+      "Barcode": "3573994002635",
+      "Width": 67.0,
+      "Height": 28.0,
+      "Depth": 57.0,
+      "Weight": 0.0,
+      "Expiration": "2027-02-20T01:35:36+01:00",
+      "Batch": "940026351",
+      "DeliveryId": "DEL_20251024142254",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 16,
+      "Barcode": "08594739268395",
+      "Width": 44.0,
+      "Height": 108.0,
+      "Depth": 108.0,
+      "Weight": 0.0,
+      "Expiration": "2028-03-20T01:35:36.560771+01:00",
+      "Batch": "7392683951",
+      "DeliveryId": "DEL_20251024142348",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4126,
+      "Barcode": "08594052051407",
+      "Width": 67.0,
+      "Height": 38.0,
+      "Depth": 127.0,
+      "Weight": 0.0,
+      "Expiration": "2028-01-20T01:35:36.560865+01:00",
+      "Batch": "0520514070",
+      "DeliveryId": "DEL_20251024142421",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8319,
+      "Barcode": "3574660402100",
+      "Width": 34.0,
+      "Height": 34.0,
+      "Depth": 113.0,
+      "Weight": 0.0,
+      "Expiration": "2027-10-20T01:35:36+02:00",
+      "Batch": "604021000",
+      "DeliveryId": "DEL_20251024142446",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5,
+      "Barcode": "4030031894336",
+      "Width": 62.0,
+      "Height": 56.0,
+      "Depth": 116.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:35:36.560758+01:00",
+      "Batch": "318943360",
+      "DeliveryId": "DEL_20251024142509",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5505,
+      "Barcode": "8594060895055",
+      "Width": 92.0,
+      "Height": 51.0,
+      "Depth": 81.0,
+      "Weight": 0.0,
+      "Expiration": "2027-03-20T01:35:36.560806+01:00",
+      "Batch": "608950550",
+      "DeliveryId": "DEL_20251024142629",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2831,
+      "Barcode": "08588000227358",
+      "Width": 71.0,
+      "Height": 31.0,
+      "Depth": 32.0,
+      "Weight": 0.0,
+      "Expiration": "2027-02-20T01:35:36.560788+01:00",
+      "Batch": "0002273580",
+      "DeliveryId": "DEL_20251024142651",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2831,
+      "Barcode": "08588000227358",
+      "Width": 72.0,
+      "Height": 31.0,
+      "Depth": 32.0,
+      "Weight": 0.0,
+      "Expiration": "2026-08-20T01:35:36.560789+02:00",
+      "Batch": "0002273581",
+      "DeliveryId": "DEL_20251024142719",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8344,
+      "Barcode": "08594739224247",
+      "Width": 61.0,
+      "Height": 34.0,
+      "Depth": 109.0,
+      "Weight": 0.0,
+      "Expiration": "2027-05-20T01:35:36.560794+02:00",
+      "Batch": "7392242471",
+      "DeliveryId": "DEL_20251024142746",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 329,
+      "Barcode": "08590335507241",
+      "Width": 102.0,
+      "Height": 55.0,
+      "Depth": 50.0,
+      "Weight": 0.0,
+      "Expiration": "2027-07-20T01:35:36.560804+02:00",
+      "Batch": "3355072411",
+      "DeliveryId": "DEL_20251024142809",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 329,
+      "Barcode": "08590335507241",
+      "Width": 101.0,
+      "Height": 54.0,
+      "Depth": 50.0,
+      "Weight": 0.0,
+      "Expiration": "2026-12-20T01:35:36.560804+01:00",
+      "Batch": "3355072410",
+      "DeliveryId": "DEL_20251024142831",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4283,
+      "Barcode": "4029799119843",
+      "Width": 94.0,
+      "Height": 30.0,
+      "Depth": 77.0,
+      "Weight": 0.0,
+      "Expiration": "2026-11-20T01:35:36.560842+01:00",
+      "Batch": "991198431",
+      "DeliveryId": "DEL_20251024142854",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 3127,
+      "Barcode": "08594739226791",
+      "Width": 64.0,
+      "Height": 41.0,
+      "Depth": 94.0,
+      "Weight": 0.0,
+      "Expiration": "2027-04-20T01:35:36.560836+02:00",
+      "Batch": "7392267910",
+      "DeliveryId": "DEL_20251024142934",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 7,
+      "Barcode": "4026466056951",
+      "Width": 152.0,
+      "Height": 39.0,
+      "Depth": 39.0,
+      "Weight": 0.0,
+      "Expiration": "2027-08-20T01:35:36.560761+02:00",
+      "Batch": "660569511",
+      "DeliveryId": "DEL_20251024142959",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9071,
+      "Barcode": "08594056565634",
+      "Width": 55.0,
+      "Height": 35.0,
+      "Depth": 99.0,
+      "Weight": 0.0,
+      "Expiration": "2028-03-20T01:35:36.560824+01:00",
+      "Batch": "0565656340",
+      "DeliveryId": "DEL_20251024143304",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2140,
+      "Barcode": "03573994002635",
+      "Width": 68.0,
+      "Height": 29.0,
+      "Depth": 57.0,
+      "Weight": 0.0,
+      "Expiration": "2027-09-20T01:35:36.560862+02:00",
+      "Batch": "9940026350",
+      "DeliveryId": "DEL_20251024143338",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 7291,
+      "Barcode": "8594739268395",
+      "Width": 104.0,
+      "Height": 29.0,
+      "Depth": 44.0,
+      "Weight": 0.0,
+      "Expiration": "2026-08-20T01:35:36.560857+02:00",
+      "Batch": "392683950",
+      "DeliveryId": "DEL_20251024143408",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 10,
+      "Barcode": "3574660403091",
+      "Width": 113.0,
+      "Height": 34.0,
+      "Depth": 35.0,
+      "Weight": 0.0,
+      "Expiration": "2027-06-20T01:35:36.560764+02:00",
+      "Batch": "604030911",
+      "DeliveryId": "DEL_20251024143442",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 14,
+      "Barcode": "08594059861672",
+      "Width": 68.0,
+      "Height": 22.0,
+      "Depth": 97.0,
+      "Weight": 0.0,
+      "Expiration": "2027-11-20T01:35:36.560769+01:00",
+      "Batch": "0598616721",
+      "DeliveryId": "DEL_20251024143503",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 14,
+      "Barcode": "08594059861672",
+      "Width": 95.0,
+      "Height": 22.0,
+      "Depth": 66.0,
+      "Weight": 0.0,
+      "Expiration": "2026-10-20T01:35:36.560769+02:00",
+      "Batch": "0598616720",
+      "DeliveryId": "DEL_20251024143526",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1772,
+      "Barcode": "8595116532818",
+      "Width": 96.0,
+      "Height": 81.0,
+      "Depth": 60.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:35:36.560815+01:00",
+      "Batch": "165328181",
+      "DeliveryId": "DEL_20251024143643",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1343,
+      "Barcode": "08594158894366",
+      "Width": 103.0,
+      "Height": 59.0,
+      "Depth": 155.0,
+      "Weight": 0.0,
+      "Expiration": "2027-10-20T01:35:36.560785+02:00",
+      "Batch": "1588943661",
+      "DeliveryId": "DEL_20251024143705",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 2094,
+      "Barcode": "08592387018300",
+      "Width": 105.0,
+      "Height": 43.0,
+      "Depth": 69.0,
+      "Weight": 0.0,
+      "Expiration": "2027-04-20T01:35:36+02:00",
+      "Batch": "3870183000",
+      "DeliveryId": "DEL_20251024143729",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 6956,
+      "Barcode": "8595618501077",
+      "Width": 124.0,
+      "Height": 54.0,
+      "Depth": 51.0,
+      "Weight": 0.0,
+      "Expiration": "2028-03-20T01:35:36.560814+01:00",
+      "Batch": "185010771",
+      "DeliveryId": "DEL_20251024143801",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 9186,
+      "Barcode": "8594739226791",
+      "Width": 64.0,
+      "Height": 40.0,
+      "Depth": 94.0,
+      "Weight": 0.0,
+      "Expiration": "2027-02-20T01:35:36.560831+01:00",
+      "Batch": "392267911",
+      "DeliveryId": "DEL_20251024143826",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 7104,
+      "Barcode": "08594002390822",
+      "Width": 53.0,
+      "Height": 55.0,
+      "Depth": 72.0,
+      "Weight": 0.0,
+      "Expiration": "2026-10-20T01:35:36.560858+02:00",
+      "Batch": "0023908220",
+      "DeliveryId": "DEL_20251024143851",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8344,
+      "Barcode": "08594739224247",
+      "Width": 107.0,
+      "Height": 35.0,
+      "Depth": 62.0,
+      "Weight": 0.0,
+      "Expiration": "2027-01-20T01:35:36.560794+01:00",
+      "Batch": "7392242470",
+      "DeliveryId": "DEL_20251024143914",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 5844,
+      "Barcode": "0088159507175",
+      "Width": 62.0,
+      "Height": 28.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2026-12-20T01:35:36+01:00",
+      "Batch": "595071750",
+      "DeliveryId": "DEL_20251024143936",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 1705,
+      "Barcode": "5099151006684",
+      "Width": 67.0,
+      "Height": 31.0,
+      "Depth": 103.0,
+      "Weight": 0.0,
+      "Expiration": "2026-09-20T01:35:36.560859+02:00",
+      "Batch": "510066840",
+      "DeliveryId": "DEL_20251024144018",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 8,
+      "Barcode": "05900411004909",
+      "Width": 78.0,
+      "Height": 79.0,
+      "Depth": 134.0,
+      "Weight": 0.0,
+      "Expiration": "2026-12-20T01:35:36.560762+01:00",
+      "Batch": "4110049090",
+      "DeliveryId": "DEL_20251024144041",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 4,
+      "Barcode": "05099151006615",
+      "Width": 43.0,
+      "Height": 117.0,
+      "Depth": 120.0,
+      "Weight": 0.0,
+      "Expiration": "2027-07-20T01:35:36.560757+02:00",
+      "Batch": "1510066151",
+      "DeliveryId": "DEL_20251024144111",
+      "WarehouseID": 1
+    },
+    {
+      "ProductID": 6832,
+      "Barcode": "8595058907095",
+      "Width": 50.0,
+      "Height": 53.0,
+      "Depth": 91.0,
+      "Weight": 0.0,
+      "Expiration": "2027-10-20T01:35:36.560796+02:00",
+      "Batch": "589070951",
+      "DeliveryId": "DEL_20251024144133",
+      "WarehouseID": 1
+    }
+  ],
+  "Restrictions": null
+}
