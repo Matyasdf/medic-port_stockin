@@ -59,10 +59,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-VSU_HORIZONTAL_GAP = 10  # 10mm gap between VSUs
-VSU_TOP_CLEARANCE = 0.3  # 0.3mm gap from item top to shelf
+VSU_HORIZONTAL_GAP = 5  # 5mm gap between VSUs (X-axis)
+VSU_TOP_CLEARANCE = 3  # 3mm gap from item top to shelf
 WIDTH_TOLERANCE = 5  # ±5mm tolerance for width matching when stacking
 HEIGHT_TOLERANCE = 5  # ±5mm tolerance for height matching when stacking
+DEPTH_GAP_BETWEEN_ITEMS = 3  # 3mm gap between items in same VSU (depth)
 
 def safe_parse_datetime(dt_string: str) -> datetime:
     try:
@@ -153,6 +154,8 @@ class Task(BaseModel):
     status: str = "pending"
     score: float = 0
     created_at: datetime = Field(default_factory=datetime.now)
+    is_new_vsu: bool = False
+    z_position: float = 0
 
 def load_robots_from_file():
     """Load robot data from robot_post.json"""
@@ -373,40 +376,121 @@ def assign_robot(task: Task, destination_position: Position) -> str:
     return best_robot.id
 
 def can_stack_in_vsu(item: Item, vsu: VirtualStorageUnit) -> bool:
-    """Check if item can stack in existing VSU"""
+    """
+    Check if item can stack in existing VSU (placed in FRONT of existing items).
+
+    Stacking rules:
+    - Same product ID (same barcode)
+    - Width within ±5mm tolerance
+    - Height within ±5mm tolerance
+    - Depth must be EXACTLY same
+    - New item width must be ≤ frontmost item width (can't put wider box in front)
+    """
     if not vsu.items:
         return False
-    
+
     # Must be same product
     first_item = items[vsu.items[0]]
     if first_item.metadata.product_id != item.metadata.product_id:
         return False
-    
-    # Check width matches (±5mm tolerance)
+
+    # Check item fits in VSU dimensions
+    if item.metadata.dimensions.width > vsu.dimensions.width:
+        print(f"      VSU {vsu.code}: Item width ({item.metadata.dimensions.width}mm) > VSU width ({vsu.dimensions.width}mm)")
+        return False
+    if item.metadata.dimensions.height > vsu.dimensions.height:
+        print(f"      VSU {vsu.code}: Item height ({item.metadata.dimensions.height}mm) > VSU height ({vsu.dimensions.height}mm)")
+        return False
+
+    # Check width matches (±5mm tolerance) for stacking compatibility
     width_diff = abs(item.metadata.dimensions.width - first_item.metadata.dimensions.width)
     if width_diff > WIDTH_TOLERANCE:
         print(f"      VSU {vsu.code}: Width mismatch ({width_diff}mm > {WIDTH_TOLERANCE}mm tolerance)")
         return False
-    
-    # Check height matches (±5mm tolerance)
+
+    # Check height matches (±5mm tolerance) for stacking compatibility
     height_diff = abs(item.metadata.dimensions.height - first_item.metadata.dimensions.height)
     if height_diff > HEIGHT_TOLERANCE:
         print(f"      VSU {vsu.code}: Height mismatch ({height_diff}mm > {HEIGHT_TOLERANCE}mm tolerance)")
         return False
-    
-    # CRITICAL: Check if depth fits in VSU
-    # Calculate total depth already used
-    total_depth_used = sum(items[i].metadata.dimensions.depth for i in vsu.items)
-    
-    # Check if new item's depth fits in remaining space
-    remaining_depth = vsu.dimensions.depth - total_depth_used
-    
-    if item.metadata.dimensions.depth > remaining_depth:
-        print(f"      VSU {vsu.code}: Not enough depth (need {item.metadata.dimensions.depth}mm, only {remaining_depth}mm available)")
+
+    # Depth must be EXACTLY same for stacking
+    if item.metadata.dimensions.depth != first_item.metadata.dimensions.depth:
+        print(f"      VSU {vsu.code}: Depth mismatch ({item.metadata.dimensions.depth}mm != {first_item.metadata.dimensions.depth}mm) - must be exact")
         return False
-    
-    print(f"      VSU {vsu.code}: CAN STACK! (depth {remaining_depth}mm available)")
+
+    # CRITICAL: New item width must be ≤ frontmost item width
+    # (Can't put wider box in front of narrower one)
+    # Frontmost item is the last one added (lowest stock_index, placed most recently in front)
+    frontmost_item = items[vsu.items[-1]]  # Last item in list is frontmost
+    if item.metadata.dimensions.width > frontmost_item.metadata.dimensions.width:
+        print(f"      VSU {vsu.code}: New item width ({item.metadata.dimensions.width}mm) > frontmost item width ({frontmost_item.metadata.dimensions.width}mm)")
+        return False
+
+    # Check if depth fits in VSU (including 3mm gap between items)
+    num_existing_items = len(vsu.items)
+    total_depth_used = first_item.metadata.dimensions.depth * num_existing_items  # All same depth
+    total_depth_with_gaps = total_depth_used + (num_existing_items * DEPTH_GAP_BETWEEN_ITEMS)
+
+    remaining_depth = vsu.dimensions.depth - total_depth_with_gaps
+
+    if item.metadata.dimensions.depth > remaining_depth:
+        print(f"      VSU {vsu.code}: Not enough depth (need {item.metadata.dimensions.depth}mm, only {remaining_depth}mm available after gaps)")
+        return False
+
+    print(f"      VSU {vsu.code}: CAN STACK! (depth {remaining_depth}mm available, placing in front)")
     return True
+
+
+def calculate_max_items_in_vsu(vsu: VirtualStorageUnit, item_depth: float) -> int:
+    """
+    Calculate maximum number of items that can fit in VSU depth-wise.
+    Considers 3mm gap between items.
+
+    Formula: max_items = floor(vsu_depth / (item_depth + gap))
+    But last item doesn't need trailing gap, so:
+    max_items = floor((vsu_depth + gap) / (item_depth + gap))
+    """
+    effective_item_depth = item_depth + DEPTH_GAP_BETWEEN_ITEMS
+    max_items = int((vsu.dimensions.depth + DEPTH_GAP_BETWEEN_ITEMS) / effective_item_depth)
+    return max(1, max_items)
+
+
+def calculate_stock_index(vsu: VirtualStorageUnit, item_depth: float, is_new_vsu: bool) -> int:
+    """
+    Calculate stock index for back-to-front placement.
+
+    First item placed at back gets highest index (max_capacity - 1).
+    Next item placed in front gets (max_capacity - 2), and so on.
+    Last item at front gets index 0.
+
+    For stacking (existing VSU): index = max_capacity - current_count - 1
+    For new VSU: index = max_capacity - 1 (first item at back)
+    """
+    max_items = calculate_max_items_in_vsu(vsu, item_depth)
+    current_count = len(vsu.items)
+
+    if is_new_vsu or current_count == 0:
+        # First item in VSU - place at back with highest index
+        return max_items - 1
+    else:
+        # Stacking - place in front of existing items
+        return max_items - current_count - 1
+
+
+def calculate_item_z_position(vsu: VirtualStorageUnit, item_depth: float, stock_index: int) -> float:
+    """
+    Calculate Z coordinate for item based on stock index.
+
+    Stock index 0 = front of VSU (lowest Z)
+    Higher stock index = further back (higher Z)
+
+    Z = vsu.position.z + (stock_index * (item_depth + gap))
+    """
+    effective_item_depth = item_depth + DEPTH_GAP_BETWEEN_ITEMS
+    z_offset = stock_index * effective_item_depth
+    return vsu.position.z + z_offset
+
 
 def find_vsu_for_stacking(item: Item) -> Optional[VirtualStorageUnit]:
     """Find existing VSU where item can stack"""
@@ -491,23 +575,25 @@ def find_empty_vsu_for_item(item: Item) -> Optional[VirtualStorageUnit]:
 
 def find_mixed_product_vsu(item: Item) -> Optional[VirtualStorageUnit]:
     """
-    FALLBACK: Find VSU where item physically fits, regardless of product.
+    FALLBACK: Find VSU where item physically fits in FRONT, regardless of product.
 
     Used when:
     - No stacking possible (no same-product VSU)
     - No empty VSU available
     - Cannot create new VSU (no shelf space)
 
-    Criteria (NO fixed tolerances - just physical fit):
+    Criteria:
     - VSU has items (different product)
-    - Item width <= VSU width (must physically fit)
+    - Item width <= frontmost item width (can't place wider box in front)
     - Item height <= VSU height (must physically fit)
-    - Remaining depth >= item depth
+    - Remaining depth >= item depth + 3mm gap
+
+    IMPORTANT: Items can ONLY be placed in FRONT of existing items, never behind.
+    This ensures boxes don't block each other.
 
     Prefers VSUs with TIGHTEST fit (minimum wasted space).
-    Every box should be placed if it physically fits.
     """
-    print(f"   FALLBACK: Checking for ANY VSU where item physically fits...")
+    print(f"   FALLBACK: Checking for ANY VSU where item fits in FRONT...")
 
     item_width = item.metadata.dimensions.width
     item_height = item.metadata.dimensions.height
@@ -527,24 +613,31 @@ def find_mixed_product_vsu(item: Item) -> Optional[VirtualStorageUnit]:
         if first_item.metadata.product_id == item.metadata.product_id:
             continue
 
-        # Check if item PHYSICALLY FITS in VSU (no tolerance - just must fit)
-        # Width: item must fit within VSU width
-        if item_width > vsu.dimensions.width:
-            continue
-
         # Height: item must fit within VSU height
         if item_height > vsu.dimensions.height:
+            print(f"      VSU {vsu.code}: Height {item_height}mm > VSU height {vsu.dimensions.height}mm")
             continue
 
-        # Check remaining depth
+        # CRITICAL: New item width must be <= frontmost item width
+        # Can't place wider box in front of narrower one (would block it)
+        frontmost_item = items[vsu.items[-1]]  # Last item in list is frontmost
+        if item_width > frontmost_item.metadata.dimensions.width:
+            print(f"      VSU {vsu.code}: Width {item_width}mm > frontmost item {frontmost_item.metadata.dimensions.width}mm")
+            continue
+
+        # Check remaining depth (including 3mm gap for new item)
+        num_existing_items = len(vsu.items)
         total_depth_used = sum(items[i].metadata.dimensions.depth for i in vsu.items)
-        remaining_depth = vsu.dimensions.depth - total_depth_used
+        # Include gaps between existing items + gap for new item
+        total_depth_with_gaps = total_depth_used + (num_existing_items * DEPTH_GAP_BETWEEN_ITEMS)
+        remaining_depth = vsu.dimensions.depth - total_depth_with_gaps
 
         if item_depth > remaining_depth:
+            print(f"      VSU {vsu.code}: Need {item_depth}mm, only {remaining_depth}mm available")
             continue
 
         # Calculate wasted space (lower = tighter fit = better)
-        width_waste = vsu.dimensions.width - item_width
+        width_waste = frontmost_item.metadata.dimensions.width - item_width
         height_waste = vsu.dimensions.height - item_height
         depth_waste = remaining_depth - item_depth
         total_waste = width_waste + height_waste + depth_waste
@@ -561,15 +654,16 @@ def find_mixed_product_vsu(item: Item) -> Optional[VirtualStorageUnit]:
             'remaining_depth': remaining_depth,
             'existing_product_id': existing_product_id,
             'shelf_name': shelf.name,
-            'items_count': len(vsu.items)
+            'items_count': len(vsu.items),
+            'frontmost_width': frontmost_item.metadata.dimensions.width
         })
 
-        print(f"      VSU {vsu.code} ({shelf.name}): Contains Product {existing_product_id}, {len(vsu.items)} items")
-        print(f"         VSU size: {vsu.dimensions.width}x{vsu.dimensions.height}mm, Item: {item_width}x{item_height}mm")
+        print(f"      VSU {vsu.code} ({shelf.name}): CAN FIT in front")
+        print(f"         Frontmost item width: {frontmost_item.metadata.dimensions.width}mm, New item: {item_width}mm")
         print(f"         Waste - W:{width_waste:.1f}mm H:{height_waste:.1f}mm D:{depth_waste:.1f}mm = Total:{total_waste:.1f}mm")
 
     if not suitable_vsus:
-        print(f"   No VSU found where item physically fits")
+        print(f"   No VSU found where item can be placed in front")
         return None
 
     # Sort by total waste (tightest fit first)
@@ -578,7 +672,8 @@ def find_mixed_product_vsu(item: Item) -> Optional[VirtualStorageUnit]:
     best = suitable_vsus[0]
     print(f"   MIXED-PRODUCT FIT: VSU {best['vsu'].code} on {best['shelf_name']}")
     print(f"      Existing Product: {best['existing_product_id']}, Items: {best['items_count']}")
-    print(f"      Total waste: {best['total_waste']:.1f}mm (W:{best['width_waste']:.1f} H:{best['height_waste']:.1f} D:{best['depth_waste']:.1f})")
+    print(f"      Frontmost width: {best['frontmost_width']}mm, New item: {item_width}mm")
+    print(f"      Total waste: {best['total_waste']:.1f}mm")
 
     return best['vsu']
 
@@ -623,8 +718,19 @@ def calculate_next_vsu_position(shelf: Shelf, item_width: float) -> Optional[flo
         return None
 
 def create_new_vsu(item: Item, shelf: Shelf) -> Optional[VirtualStorageUnit]:
-    """Create new VSU for item on shelf"""
+    """Create new VSU for item on shelf with validation"""
     global vsu_counter
+
+    # Validate box dimensions against shelf
+    if item.metadata.dimensions.width > shelf.dimensions.width:
+        print(f"      Item width ({item.metadata.dimensions.width}mm) > shelf width ({shelf.dimensions.width}mm)")
+        return None
+    if item.metadata.dimensions.height > shelf.dimensions.height - VSU_TOP_CLEARANCE:
+        print(f"      Item height ({item.metadata.dimensions.height}mm) > shelf height ({shelf.dimensions.height - VSU_TOP_CLEARANCE}mm)")
+        return None
+    if item.metadata.dimensions.depth > shelf.dimensions.depth:
+        print(f"      Item depth ({item.metadata.dimensions.depth}mm) > shelf depth ({shelf.dimensions.depth}mm)")
+        return None
 
     # Calculate position
     x_pos = calculate_next_vsu_position(shelf, item.metadata.dimensions.width)
@@ -1151,14 +1257,21 @@ print(f"{len(robots)} robots ready")
 
 @app.post("/stockin/suggest", tags=["Stock-In Operations"])
 async def suggest_placement(scanner_input: ScannerInput):
-    """Suggest optimal placement for incoming item"""
+    """
+    Step 1: Suggest optimal placement for incoming item.
+
+    - Finds best VSU (stacking same product, empty VSU, or creates new)
+    - Calculates stock_index based on back-to-front placement
+    - Returns task_id and placement details
+    - Does NOT modify inventory - call /task/{task_id}/complete to confirm
+    """
     global item_counter, task_counter
-    
+
     try:
-        # Create item but DON'T save yet
+        # Create item (temporary - will be saved on complete)
         item_counter += 1
         product_id = get_product_id_from_barcode(scanner_input.Barcode)
-        
+
         item = Item(
             id=item_counter,
             metadata=ItemMetadata(
@@ -1175,14 +1288,13 @@ async def suggest_placement(scanner_input: ScannerInput):
                 delivery_id=scanner_input.DeliveryId or "UNKNOWN"
             )
         )
-        
-        # Find or create VSU BEFORE saving item
+
+        # Find or create VSU (VSU is created but item not added yet)
         target_vsu, is_new_vsu = find_or_create_vsu_for_item(item)
-        
+
         if not target_vsu:
-            # Don't save item - placement failed!
             item_counter -= 1  # Rollback counter
-            error_detail = {
+            raise HTTPException(status_code=400, detail={
                 "error": "No suitable storage location found",
                 "reason": "Warehouse full or item too large",
                 "item_dimensions": {
@@ -1190,61 +1302,69 @@ async def suggest_placement(scanner_input: ScannerInput):
                     "height": scanner_input.Height,
                     "depth": scanner_input.Depth
                 },
-                "suggestion": f"Item requires {scanner_input.Width}mm width and {scanner_input.Height}mm height. All shelves have insufficient space.",
                 "action_needed": "Manual placement required or warehouse optimization needed"
-            }
-            raise HTTPException(status_code=400, detail=error_detail)
-        
-        # SUCCESS - Now save the item
+            })
+
+        # Calculate stock index (back-to-front placement)
+        stock_index = calculate_stock_index(target_vsu, item.metadata.dimensions.depth, is_new_vsu)
+
+        # Calculate exact Z position for this item
+        z_position = calculate_item_z_position(target_vsu, item.metadata.dimensions.depth, stock_index)
+
+        # Calculate max capacity for this VSU
+        max_capacity = calculate_max_items_in_vsu(target_vsu, item.metadata.dimensions.depth)
+
+        # Store item temporarily (not in VSU yet)
         items[item.id] = item
-        
-        # Calculate placement score
-        score = calculate_placement_score(item, target_vsu)
-        
-        # Create task
+        item.stock_index = stock_index
+
+        # Get location details
+        shelf = shelves[target_vsu.shelf_id]
+        rack = racks[shelf.rack_id]
+
+        # Create task (pending confirmation)
         task_counter += 1
         task_id = f"TASK_{task_counter:03d}"
-        
+
         task = Task(
             id=task_id,
             item_id=item.id,
             destination_vsu_id=target_vsu.id,
-            robot_id="",  # Will be assigned
-            score=score
+            robot_id="",
+            score=calculate_placement_score(item, target_vsu),
+            is_new_vsu=is_new_vsu,
+            z_position=z_position
         )
-        
         tasks[task_id] = task
-        
-        # Assign robot
-        robot_id = assign_robot(task, target_vsu.position)
-        
-        # Get location details
-        shelf = shelves[target_vsu.shelf_id]
-        rack = racks[shelf.rack_id]
-        
-        # Update progress
+
+        # Update progress (pending)
         progress["total_boxes"] += 1
-        
+
         return {
             "task_id": task_id,
-            "robot": robot_id,
+            "product_id": product_id,
             "placement": {
                 "rack": rack.name,
                 "shelf": shelf.name,
                 "vsu_code": target_vsu.code,
                 "vsu_id": target_vsu.id,
-                "stock_index": 0 if is_new_vsu else len(target_vsu.items),
+                "stock_index": stock_index,
+                "max_capacity": max_capacity,
                 "coordinates": {
                     "x": int(target_vsu.position.x),
                     "y": int(target_vsu.position.y),
-                    "z": int(target_vsu.position.z)
+                    "z": int(z_position)
                 }
             },
-            "is_new_vsu": is_new_vsu  # Now correctly tracks if VSU was created or reused
+            "is_new_vsu": is_new_vsu,
+            "vsu_dimensions": {
+                "width": target_vsu.dimensions.width,
+                "height": target_vsu.dimensions.height,
+                "depth": target_vsu.dimensions.depth
+            }
         }
-        
+
     except HTTPException:
-        # Re-raise HTTPException as-is (don't convert to 500)
         raise
     except Exception as e:
         traceback.print_exc()
@@ -1252,48 +1372,42 @@ async def suggest_placement(scanner_input: ScannerInput):
 
 @app.post("/task/{task_id}/complete", tags=["Stock-In Operations"])
 async def complete_task(task_id: str):
-    """Mark task as completed and update warehouse state"""
+    """
+    Step 2: Complete the stock-in task and update inventory.
+
+    - Adds item to VSU
+    - Logs the stock-in operation
+    - Saves warehouse state to file
+    """
     if task_id not in tasks:
         raise HTTPException(status_code=404, detail=f"Task {task_id} not found")
-    
+
     task = tasks[task_id]
-    
+
     if task.status == "completed":
         return {"message": "Task already completed", "task_id": task_id}
-    
+
     try:
         # Update task status
         task.status = "completed"
-        
+
         # Get item and VSU
         item = items[task.item_id]
         vsu = virtual_units[task.destination_vsu_id]
-        
-        # Add item to VSU
+
+        # Add item to VSU (now actually register it)
         if item.id not in vsu.items:
             vsu.items.append(item.id)
             item.vsu_id = vsu.id
-            item.stock_index = len(vsu.items) - 1
-        
+            # stock_index was already calculated in suggest
+
         vsu.occupied = True
-        
-        # FREE THE ROBOT - Move to destination and set IDLE
-        robot = robots.get(task.robot_id)
-        if robot:
-            robot.position = Position(
-                x=vsu.position.x,
-                y=vsu.position.y,
-                z=vsu.position.z
-            )
-            robot.status = "IDLE"  # Robot is now available
-            robot.current_task_id = None
-            
-            # Save robot state to file
-            save_robots_to_file()
-        
+
+        # Get Z position from task (stored during suggest)
+        z_position = getattr(task, 'z_position', vsu.position.z)
+
         # Update progress
         progress["completed"] += 1
-        progress["current_box"] += 1
 
         # Log stock-in operation
         shelf = shelves.get(vsu.shelf_id)
@@ -1303,7 +1417,7 @@ async def complete_task(task_id: str):
             batch=item.metadata.batch,
             vsu_code=vsu.code,
             shelf_name=shelf.name if shelf else None,
-            coordinates={"x": vsu.position.x, "y": vsu.position.y, "z": vsu.position.z}
+            coordinates={"x": vsu.position.x, "y": vsu.position.y, "z": z_position}
         )
 
         # Save warehouse state
@@ -1312,21 +1426,17 @@ async def complete_task(task_id: str):
         return {
             "status": "success",
             "task_id": task_id,
-            "message": "Task completed successfully",
-            "robot_freed": robot.id if robot else None,
-            "robot_status": robot.status if robot else None,
-            "robot_position": {
-                "x": robot.position.x,
-                "y": robot.position.y,
-                "z": robot.position.z
-            } if robot else None,
-            "item": {
-                "id": item.id,
-                "barcode": item.metadata.barcode,
-                "vsu": vsu.code,
-                "stock_index": item.stock_index
+            "message": "Item placed successfully",
+            "product_id": item.metadata.product_id,
+            "barcode": item.metadata.barcode,
+            "vsu_code": vsu.code,
+            "stock_index": item.stock_index,
+            "coordinates": {
+                "x": int(vsu.position.x),
+                "y": int(vsu.position.y),
+                "z": int(z_position)
             },
-            "progress": progress
+            "items_in_vsu": len(vsu.items)
         }
     except Exception as e:
         traceback.print_exc()
@@ -1871,6 +1981,117 @@ async def get_weights_status():
             {"x": pos.x, "y": pos.y, "z": pos.z} for pos in OUTPUT_POSITIONS
         ]
     }
+
+
+# =============================================================================
+# OPTIMIZATION ENDPOINTS
+# =============================================================================
+
+from optimization import (
+    cleanup_empty_vsus,
+    get_products_to_optimize,
+    start_optimization,
+    complete_optimization,
+    reset_optimization_state
+)
+
+
+@app.post("/optimization/cleanup-empty-vsus", tags=["Optimization"])
+async def cleanup_empty_vsus_endpoint():
+    """
+    Delete all empty VSUs from warehouse.
+
+    Run this before starting optimization to free up shelf space.
+    """
+    result = cleanup_empty_vsus(
+        virtual_units=virtual_units,
+        shelves=shelves,
+        save_warehouse_func=save_warehouse_state
+    )
+    return result
+
+
+@app.get("/optimization/products-to-optimize", tags=["Optimization"])
+async def get_products_to_optimize_endpoint():
+    """
+    Get list of products to optimize, sorted by weight (high demand first).
+
+    Returns products with their VSU counts and optimization status.
+    """
+    result = get_products_to_optimize(
+        items=items,
+        virtual_units=virtual_units,
+        product_weights=product_weights,
+        default_weight=DEFAULT_WEIGHT
+    )
+    return result
+
+
+@app.post("/optimization/start/{product_id}", tags=["Optimization"])
+async def start_optimization_endpoint(product_id: int):
+    """
+    Start optimization for a specific product.
+
+    Finds 2 VSUs to consolidate and returns pick/place instructions.
+    Call this repeatedly until product is fully optimized.
+    """
+    global vsu_counter
+
+    result = start_optimization(
+        product_id=product_id,
+        items=items,
+        virtual_units=virtual_units,
+        shelves=shelves,
+        racks=racks,
+        product_weights=product_weights,
+        output_positions=OUTPUT_POSITIONS,
+        vsu_counter=vsu_counter,
+        default_weight=DEFAULT_WEIGHT
+    )
+
+    # Update vsu_counter if new VSUs were created
+    if result.get("status") == "success" and "task_id" in result:
+        from optimization import optimization_tasks
+        task = optimization_tasks.get(result["task_id"])
+        if task and "vsu_counter" in task:
+            vsu_counter = task["vsu_counter"]
+
+    return result
+
+
+class CompleteOptimizationRequest(BaseModel):
+    task_id: str
+
+
+@app.post("/optimization/complete", tags=["Optimization"])
+async def complete_optimization_endpoint(request: CompleteOptimizationRequest):
+    """
+    Complete an optimization task.
+
+    Updates inventory, moves items to new VSUs, deletes empty source VSUs.
+    """
+    result = complete_optimization(
+        task_id=request.task_id,
+        items=items,
+        virtual_units=virtual_units,
+        shelves=shelves,
+        save_warehouse_func=save_warehouse_state,
+        VirtualStorageUnit=VirtualStorageUnit,
+        Dimensions=Dimensions,
+        Position=Position
+    )
+    return result
+
+
+@app.post("/optimization/reset", tags=["Optimization"])
+async def reset_optimization_endpoint():
+    """
+    Reset optimization state.
+
+    Clears processed VSUs tracking. Use before starting a new optimization run.
+    """
+    reset_optimization_state()
+    return {"status": "success", "message": "Optimization state reset"}
 
 
 # Track performance statistics
@@ -2907,3 +3128,4 @@ async def get_archive_stats():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
